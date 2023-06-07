@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Sidebar template</title>
+    <!-- Scripts -->
+    <script src="./js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <style type="text/css">
+      /* popup */
+.pp-hd {
+  display: flex;
+  align-items: center;
+  background: #2B4F90;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.pp-hd h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+/* identical to box height */
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+div#popup_body {
+  background: white;
+  background: #FCFCFC;
+  /* border: 1px solid #E3E3E3; */
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+div#class_popup {
+  max-width: 500px !important;
+}
+
+.pp-prof {
+  
+  display: flex;
+  align-items: center;
+}
+
+.pp-prof img {
+  max-width: 54px;
+  min-width: 54px;
+  border-radius: 50px;
+}
+
+.pp-prof-det {
+  margin-left: 20px;
+}
+
+.pp-prof-det h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  /* line-height: 0px; */
+/* identical to box height */
+  color: #2C2C2C;
+  margin-bottom: 10px !important;
+}
+
+.pp-prof-det p {
+  margin-bottom: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+/* identical to box height */
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 10px !important;
+}
+
+.p-d-g {
+    padding: 20px;
+}
+
+.pp-prof {
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 20px;
+}
+
+.select-option-g .label-txt-g {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7D7D7D;
+    margin: 20px 0px;
+}
+
+.selc-inner-g input[type="radio"] {
+    margin: 0px !important;
+}
+
+label.container span.checkmark {
+    top: 2px;
+}
+
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+padding-right: 0px;
+color: #343434;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #84878D;
+    box-sizing: border-box;
+}
+
+/* On mouse-over, add a grey background color */
+
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+ 
+    border: 3px solid #2B4F90;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.select-ic-sec {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.selc-inner-g {
+    width: 50% !important;
+}
+
+.pp-txt-g {
+    background: #FCFCFC;
+    border: 1px solid #D2D2D2 !important;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    padding: 20px;
+    max-height: 100px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.p-d-g .upload-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.upp-latt p.drag-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px !important;
+    line-height: 18px !important;
+    display: block !important;
+    /* align-items: center; */
+    text-align: center !important;
+    color: #000000 !important;
+    margin-bottom: 5px !important;
+}
+
+.upp-latt .upload-file-input::before{
+    text-align: end;
+}
+
+.p-d-g input.upload-file-input {
+    background: none !important;
+    border: none !important;
+    padding: 0px !important;
+    margin: 0px auto !important;
+    text-align: center !important;
+    height: 30px !important;
+    /* width: max-content !important; */
+}
+
+
+.p-d-g .upload-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    min-height: 100px !important;
+    max-height: 100px !important;
+}
+
+.upp-latt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px !important;
+    margin-left: 10px !important;
+}
+
+.assignment-format.p-0.pro-in-g {
+    display: flex;
+    align-items: center;
+}
+
+.prog-b-gg .progress.prog-bar {
+    width: 74px !important;
+    margin: 0px !important;
+}
+
+.prog-b-gg {
+    display: flex;
+    align-items: center;
+}
+
+
+.prog-b-gg .progress-bar {
+    background: #325AA3 !important;
+}
+
+.prog-b-gg p {
+    font-family: Open Sans !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    display: flex;
+    align-items: center !important;
+    color: #000000 !important;
+    margin-bottom: 0px !important;
+    margin-left: 10px;
+}
+
+.p-d-g .upload-wrapper .ulop-iiner {
+    width: max-content !important;
+}
+
+.prog-b-gg {
+    width: max-content !important;
+}
+
+.format-details.p-0 {
+    width: max-content !important;
+}
+
+.can-txt-tt {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+}
+
+.can-txt-tt:hover {
+   color: #E23232;
+   text-decoration: none;
+}
+
+.assignment-format.p-0.pro-in-g {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px !important;
+    justify-content: space-between;
+    
+    margin-bottom: 0px !important;
+}
+
+#c_popup {
+    background: #FCFCFC;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 320px;
+    height: 348px;
+}
+
+#c_popup {
+    padding: 50px;
+    text-align: center;
+}
+
+#c_popup h2 {
+    margin: 30px auto;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #343434;
+}
+
+.view-to-dash {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2D5295;
+    border-radius: 100px;
+    width: 220px;
+    height: 42px;
+    border: 0;
+}
+/* end popup */
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="#">
+            <i class="fa fa-bell"></i>Notification
+            <span class="badge badge-pill badge-warning notification">3</span>
+        </a>
+        <a href="login_sota.html" class="logout">
+            <i class="fas fa-sign-out-alt"></i>Logout
+
+        </a>
+
+
+    </header>
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="#">Online Teaching</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+
+                        <img class="img-responsive img-rounded" src="./images/student/user.png" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Daniel Thomas
+          </span>
+                        <span class="user-role">Student </span>
+
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Home</span>
+                        </li>
+                        <li>
+                            <a href="dashboard_sota.html" class="active">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="schedule_classes_calender_sota.html">
+                                <i class="fas fa-desktop"></i>
+                                <span> Scheduled Classes</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="previous_classes_sota.html">
+                                <i class="fas fa-desktop"></i>
+                                <span>Previous Classes</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="message_sota.html">
+                                <i class="fas fa-envelope"></i>
+                                <span>Messages</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="browse_sota.html">
+                                <i class="fas fa-window-maximize"></i>
+                                <span>Browse Class</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <p class="text-center">copyright © All rights reserved</p>
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+            <div class="container-fluid">
+                <div class="col-lg-12">
+                    <h2 class="title">Dashboard</h2>
+
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Frame 1
+                  </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cHelp">
+                    Frame 2
+                  </button>
+                    <!-- The Modal -->
+                    <div class="modal fade p-0" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered justify-content-center">
+                            <div class="modal-content" id="class_popup">
+                                <div class="modal-body" id="popup_body">
+                                    <div class="pp-hd">
+                                        <h2>Deferal or Excusal Request</h2>
+                                        <a href="#">Close</a>
+                                    </div>
+                                    <div class="p-d-g">
+                                    <div class="pp-prof">
+                                        <img src="./images/juror/stud_6.png">
+                                        <div class="pp-prof-det">
+                                            <h2>Ms. Halle Berry </h2>
+                                            <p>Clerk of Superior Court </p>
+                                        </div>
+                                    </div>
+                                    <div class="select-option-g">
+                                        <label class="label-txt-g">Select Option</label>
+                                        <div class="select-ic-sec">
+                                            <div class="selc-inner-g">
+                                                <label class="container">Request to be Excused
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                            <div class="selc-inner-g">
+                                                <label class="container">Non-citizen or Non-resident
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                            <div class="selc-inner-g">
+                                                <label class="container">Full-time studen
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                            <div class="selc-inner-g">
+                                                <label class="container">COVID - 19 high risk 
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                            <div class="selc-inner-g">
+                                                <label class="container">Military 
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                            <div class="selc-inner-g">
+                                                <label class="container">72 Yrs or Older 
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                            <div class="selc-inner-g">
+                                                <label class="container">Other
+                                                    <input type="radio" name="radio">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <textarea class="pp-txt-g">Enter the reason</textarea>
+
+                                    <div class="upload-wrapper">
+                                        <div class="ulop-iiner">
+                                        <img src="./images/juror/upload.png" class="drag-img"></div>
+                                        <div class="upp-latt">
+                                        <p class="drag-text">Drag and Drop your files here</p>
+                                        <p class="drag-text">or</p>
+                                        <input type="file" class="upload-file-input"></div>
+                                    </div>
+
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 assign-right p-0">
+                                        <div class="uploading-wrapper">
+                                          
+                                                <!--first  -->
+                                                <div class="assignment-format p-0 pro-in-g">
+                                                    
+                                                        <div class=" format-details p-0">
+                                                            <h3>Jamie Fox Student Note file-1.pdf</h3>                                                          
+                                                        </div>
+                                                    <div class="prog-b-gg">                                                        <div class="progress prog-bar">
+                                                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <p>100%</p>
+                                                        </div>
+
+                                                        <a href="#" class="can-txt-tt">x Remove</a>
+                                                </div>
+
+                                                <div class="assignment-format p-0 pro-in-g">
+                                                    
+                                                    <div class=" format-details p-0">
+                                                        <h3>Jamie Fox Student Note file-1.pdf</h3>                                                          
+                                                    </div>
+                                                <div class="prog-b-gg">                                                        <div class="progress prog-bar">
+                                                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                        <p>100%</p>
+                                                    </div>
+
+                                                    <a href="#" class="can-txt-tt">x cancel</a>
+                                            </div>
+                             
+                                 
+                                               
+                                                <!-- end first -->
+
+
+                                                <button class="submit-btn mx-auto d-block mt-3">Submit</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade p-0" id="cHelp">
+                        <div class="modal-dialog modal-dialog-centered justify-content-center">
+                            <div class="modal-content" id="c_popup">
+
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                                    <path d="M40.5 12.7935V2.25C40.5 1.6515 40.2615 1.08 39.843 0.657C39.4245 0.234 38.8485 0 38.25 0H6.75C5.508 0 4.5 1.008 4.5 2.25V12.7935C4.5 18.2025 6.606 23.2875 10.431 27.1125L14.8185 31.5L10.431 35.8875C6.606 39.717 4.5 44.7975 4.5 50.2065V60.7545C4.5 61.353 4.7385 61.9245 5.157 62.3475C5.5755 62.7705 6.1515 63.0045 6.75 63.0045L38.25 63C39.492 63 40.5 61.992 40.5 60.75V50.202C40.5 44.793 38.394 39.708 34.569 35.883L30.1815 31.5L34.569 27.108C38.394 23.2875 40.5 18.2025 40.5 12.7935Z" fill="#ECEFF1"/>
+                                    <path d="M2.25 4.5C1.008 4.5 0 3.4965 0 2.25C0 1.0125 1.008 0 2.25 0H42.75C43.992 0 45 1.008 45 2.25C45 3.492 43.992 4.5 42.75 4.5H2.25Z" fill="#607D8B"/>
+                                    <path d="M42.75 63H2.25C1.0125 63 0 61.9875 0 60.75C0 59.5125 1.0125 58.5 2.25 58.5H42.75C43.9875 58.5 45 59.5125 45 60.75C45 61.9875 43.9875 63 42.75 63Z" fill="#607D8B"/>
+                                    <path d="M9 9V12.7935C9 17.001 10.638 20.952 13.6125 23.931C13.6125 23.931 22.5 30.906 22.5 31.5C22.5 30.906 31.3875 23.9265 31.3875 23.9265C34.362 20.952 36 16.9965 36 12.7935V9H9Z" fill="#B0BEC5"/>
+                                    <path d="M9 58.5V54.7065C9 50.499 10.638 46.548 13.6125 43.569C13.6125 43.5735 22.5 36.594 22.5 36C22.5 36.594 31.3875 43.5735 31.3875 43.5735C34.362 46.548 36 50.5035 36 54.711V58.5H9Z" fill="#B0BEC5"/>
+                                    <path d="M42.75 58.5H40.5V50.202C40.5 44.793 38.394 39.708 34.569 35.883L33.6285 34.947C29.529 39.366 27 45.261 27 51.75C27 55.8045 27.999 59.6205 29.7315 63H38.25H42.75C43.9875 63 45 61.9875 45 60.75C45 59.5125 43.9875 58.5 42.75 58.5Z" fill="#FAFAFA"/>
+                                    <path d="M51.75 72C62.9338 72 72 62.9338 72 51.75C72 40.5662 62.9338 31.5 51.75 31.5C40.5662 31.5 31.5 40.5662 31.5 51.75C31.5 62.9338 40.5662 72 51.75 72Z" fill="#2D5295"/>
+                                    <path d="M58.5 60.75C57.924 60.75 57.348 60.5295 56.907 60.093L50.157 53.343C49.7385 52.92 49.5 52.3485 49.5 51.75V42.75C49.5 41.508 50.508 40.5 51.75 40.5C52.992 40.5 54 41.508 54 42.75V50.8185L60.093 56.9115C60.9705 57.789 60.9705 59.2155 60.093 60.093C59.652 60.5295 59.076 60.75 58.5 60.75Z" fill="#FAFAFA"/>
+                                    </svg></span>       
+                                <h2>Your Deferral/Excuse request is
+                                    under review.!</h2>
+                                    <button class="view-to-dash">Go back to Dashboard</button>
+                                </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </main>
+        <!-- page-content" -->
+    </div>
+
+</body>

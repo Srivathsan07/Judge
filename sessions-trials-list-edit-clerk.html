@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Jury Management</title>
+    <!-- Scripts -->
+    <script src="./js/app.js" defer></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="clerk_module_page">
+        <header>
+
+            <a href="#">
+                <i class="fa fa-bell"></i>Notification
+                <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="Login-clerk.html" class="logout">
+                <i class="fas fa-sign-out-alt"></i>Logout
+
+            </a>
+
+
+        </header>
+        <div class="page-wrapper chiller-theme toggled">
+            <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    <div class="sidebar-brand">
+                        <a href="#">Juror & Trial Portal</a>
+                        <div id="close-sidebar">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="sidebar-header">
+                        <div class="user-pic">
+
+                            <img class="img-responsive img-rounded" src="./images/user.png.png" alt="User picture">
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">George Bailey
+                            </span>
+                            <span class="user-role">Clerk</span>
+
+                        </div>
+                    </div>
+                    <!-- sidebar-header  -->
+
+
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="header-menu">
+                                <span>Home</span>
+                            </li>
+
+                            <li>
+                                <a href="dashboard-clerk.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
+                                        fill="none">
+                                        <path
+                                            d="M18 9.64822C18 11.6227 17.3716 13.497 16.1827 15.0687C15.9482 15.379 15.5071 15.4391 15.1978 15.2052C14.8881 14.971 14.827 14.53 15.0612 14.2203C16.0638 12.895 16.5938 11.3139 16.5938 9.64822C16.5938 5.45117 13.1947 2.05859 9 2.05859C4.8024 2.05859 1.40625 5.45378 1.40625 9.64822C1.40625 11.3139 1.9362 12.895 2.93871 14.2203C3.17299 14.53 3.11188 14.971 2.8022 15.2052C2.49239 15.4395 2.05156 15.3784 1.81714 15.0687C0.628418 13.497 0 11.6227 0 9.64822C0 4.67361 4.02814 0.652344 9 0.652344C13.9746 0.652344 18 4.67636 18 9.64822ZM13.4551 5.41368C13.7296 5.6882 13.7296 6.13342 13.4551 6.40794L11.1632 8.69983C11.3519 9.04768 11.4593 9.44594 11.4593 9.86864C11.4593 11.2248 10.356 12.3279 9 12.3279C7.64388 12.3279 6.54071 11.2248 6.54071 9.86864C6.54071 8.51265 7.64388 7.40935 9 7.40935C9.42284 7.40935 9.82095 7.51674 10.1688 7.70543L12.4607 5.41354C12.7354 5.13902 13.1804 5.13902 13.4551 5.41368ZM10.053 9.86878C10.053 9.28815 9.58063 8.81574 9 8.81574C8.41937 8.81574 7.94696 9.28815 7.94696 9.86878C7.94696 10.4494 8.41937 10.9218 9 10.9218C9.58063 10.9218 10.053 10.4494 10.053 9.86878Z"
+                                            fill="#74839F" />
+                                    </svg>
+                                    <span> Dashboard</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="create-jury-pool-and-summons2-clerk.html">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.4026 12.0591C16.785 11.6014 17.0156 11.0127 17.0156 10.3711C17.0156 8.91721 15.8328 7.73438 14.3789 7.73438V5.02734H9.52734V0H3.62109V7.73438C2.16721 7.73438 0.984375 8.91721 0.984375 10.3711C0.984375 11.0127 1.215 11.6014 1.59739 12.0591C0.672434 12.3517 0 13.2178 0 14.2383V18H18V14.2383C18 13.2178 17.3276 12.3517 16.4026 12.0591ZM3.62109 8.78906C4.49343 8.78906 5.20312 9.49876 5.20312 10.3711C5.20312 11.2434 4.49343 11.9531 3.62109 11.9531C2.74876 11.9531 2.03906 11.2434 2.03906 10.3711C2.03906 9.49876 2.74876 8.78906 3.62109 8.78906ZM6.11719 16.9453H1.05469V14.2383C1.05469 13.5598 1.60668 13.0078 2.28516 13.0078H4.88672C5.5652 13.0078 6.11719 13.5598 6.11719 14.2383V16.9453ZM8.47266 16.9453H7.17188V14.2383C7.17188 13.238 6.52556 12.3864 5.6288 12.0775C6.02061 11.6172 6.25781 11.0215 6.25781 10.3711C6.25781 9.29211 5.60605 8.3629 4.67578 7.95519V1.05469H8.47266V16.9453ZM15.9609 10.3711C15.9609 11.2434 15.2512 11.9531 14.3789 11.9531C13.5066 11.9531 12.7969 11.2434 12.7969 10.3711C12.7969 9.49876 13.5066 8.78906 14.3789 8.78906C15.2512 8.78906 15.9609 9.49876 15.9609 10.3711ZM10.8281 14.2383V16.9453H9.52734V6.08203H13.3242V7.95519C12.3939 8.3629 11.7422 9.29208 11.7422 10.3711C11.7422 11.0215 11.9794 11.6172 12.3712 12.0775C11.4744 12.3864 10.8281 13.238 10.8281 14.2383ZM16.9453 16.9453H11.8828V14.2383C11.8828 13.5598 12.4348 13.0078 13.1133 13.0078H15.7148C16.3933 13.0078 16.9453 13.5598 16.9453 14.2383V16.9453Z"
+                                            fill="#74839F" />
+                                    </svg>
+
+                                    <span>Create Jury Pool and Su...</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="active" href="sessions_Trials_List-clerk1.html">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.527387 13.8008H3.1641V15.3828C3.1641 15.674 3.40021 15.9101 3.69144 15.9101H17.4727C17.7639 15.9101 18 15.674 18 15.3828V1.67187C18 1.38064 17.7639 1.14453 17.4727 1.14453H14.836V0.617186C14.836 0.325953 14.5998 0.0898438 14.3086 0.0898438C14.0174 0.0898438 13.7813 0.325953 13.7813 0.617186V1.14453H11.1094V0.617186C11.1094 0.325953 10.8733 0.0898438 10.5821 0.0898438C10.2908 0.0898438 10.0547 0.325953 10.0547 0.617186V1.14453H7.418V0.617186C7.418 0.325953 7.18189 0.0898438 6.89066 0.0898438C6.59942 0.0898438 6.36331 0.325953 6.36331 0.617186V1.14453H3.69144C3.40021 1.14453 3.1641 1.38064 3.1641 1.67187V4.83593C3.1641 8.72244 1.54885 11.7123 0.189782 12.8683C0.0192041 13.0104 -0.0440418 13.2442 0.0315088 13.453C0.10713 13.6617 0.30534 13.8008 0.527387 13.8008ZM16.9453 14.8554H4.21879V13.8008H14.3086C14.432 13.8008 14.5514 13.7575 14.6462 13.6785C15.2801 13.1505 16.2621 11.8934 16.9453 10.2833V14.8554ZM4.21879 2.19921H6.36331V2.72656C6.36331 3.01779 6.59942 3.2539 6.89066 3.2539C7.18189 3.2539 7.418 3.01779 7.418 2.72656V2.19921H10.0547V2.72656C10.0547 3.01779 10.2908 3.2539 10.5821 3.2539C10.8733 3.2539 11.1094 3.01779 11.1094 2.72656V2.19921H13.7813V2.72656C13.7813 3.01779 14.0174 3.2539 14.3086 3.2539C14.5998 3.2539 14.836 3.01779 14.836 2.72656V2.19921H16.9453V4.30859H4.21879V2.19921ZM4.20975 5.36292H16.936C16.8171 8.70821 15.5332 11.3403 14.1018 12.7461H1.72688C3.34874 10.6796 4.12274 7.98881 4.20975 5.36292Z"
+                                            fill="#74839F" />
+                                    </svg>
+
+                                    <span>Voir Dire & Sessions</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="juror-management-clerk.html">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.47986 12.4555L4.0658 17.143C4.10244 17.4362 4.35169 17.6562 4.6472 17.6562H15.3527C15.6483 17.6562 15.8975 17.4362 15.9342 17.143L16.5201 12.4555C16.541 12.2887 16.4892 12.121 16.3779 11.995C16.2667 11.8691 16.1068 11.7969 15.9387 11.7969H4.0613C3.89326 11.7969 3.73326 11.8691 3.62205 11.995C3.51084 12.121 3.45904 12.2887 3.47986 12.4555ZM15.275 12.9688L14.8356 16.4844H5.16447L4.72501 12.9688H15.275Z"
+                                            fill="#74839F" />
+                                        <path
+                                            d="M19.4141 7.10938H18.7891V6.44531C18.7891 5.20457 18.1045 4.12129 17.0938 3.55145C17.4195 3.17473 17.6172 2.68438 17.6172 2.14844C17.6172 0.963789 16.6534 0 15.4688 0C14.2841 0 13.3203 0.963789 13.3203 2.14844C13.3203 2.68438 13.518 3.17473 13.8438 3.55145C13.4014 3.80086 13.0216 4.14836 12.7344 4.56473C12.4471 4.14836 12.0673 3.80082 11.625 3.55145C11.9507 3.17473 12.1484 2.68438 12.1484 2.14844C12.1484 0.963789 11.1846 0 10 0C8.81535 0 7.85156 0.963789 7.85156 2.14844C7.85156 2.68438 8.0493 3.17473 8.375 3.55145C7.93262 3.80086 7.55289 4.14836 7.26562 4.56473C6.97836 4.14836 6.59859 3.80082 6.15625 3.55145C6.48195 3.17473 6.67969 2.68438 6.67969 2.14844C6.67969 0.963789 5.7159 0 4.53125 0C3.3466 0 2.38281 0.963789 2.38281 2.14844C2.38281 2.68438 2.58055 3.17473 2.90625 3.55145C1.89547 4.12129 1.21094 5.20457 1.21094 6.44531V7.10938H0.585938C0.262344 7.10938 0 7.37172 0 7.69531V10.0391C0 10.3627 0.262344 10.625 0.585938 10.625H0.888984L1.91437 18.8281H1.40625C1.08266 18.8281 0.820312 19.0905 0.820312 19.4141C0.820312 19.7377 1.08266 20 1.40625 20H18.5938C18.9173 20 19.1797 19.7377 19.1797 19.4141C19.1797 19.0905 18.9173 18.8281 18.5938 18.8281H18.0856L19.111 10.625H19.4141C19.7377 10.625 20 10.3627 20 10.0391V7.69531C20 7.37172 19.7377 7.10938 19.4141 7.10938ZM14.4922 2.14844C14.4922 1.60996 14.9303 1.17188 15.4688 1.17188C16.0072 1.17188 16.4453 1.60996 16.4453 2.14844C16.4453 2.68691 16.0072 3.125 15.4688 3.125C14.9303 3.125 14.4922 2.68691 14.4922 2.14844ZM15.4688 4.29688C16.6534 4.29688 17.6172 5.26066 17.6172 6.44531V7.10938H13.3203V6.44531C13.3203 5.26066 14.2841 4.29688 15.4688 4.29688ZM9.02344 2.14844C9.02344 1.60996 9.46152 1.17188 10 1.17188C10.5385 1.17188 10.9766 1.60996 10.9766 2.14844C10.9766 2.68691 10.5385 3.125 10 3.125C9.46152 3.125 9.02344 2.68691 9.02344 2.14844ZM10 4.29688C11.1846 4.29688 12.1484 5.26066 12.1484 6.44531V7.10938H7.85156V6.44531C7.85156 5.26066 8.81535 4.29688 10 4.29688ZM3.55469 2.14844C3.55469 1.60996 3.99277 1.17188 4.53125 1.17188C5.06973 1.17188 5.50781 1.60996 5.50781 2.14844C5.50781 2.68691 5.06973 3.125 4.53125 3.125C3.99277 3.125 3.55469 2.68691 3.55469 2.14844ZM2.38281 6.44531C2.38281 5.26066 3.3466 4.29688 4.53125 4.29688C5.7159 4.29688 6.67969 5.26066 6.67969 6.44531V7.10938H2.38281V6.44531ZM1.17188 8.28125H18.8281V9.45312H1.17188V8.28125ZM16.9046 18.8281H3.09539L2.07 10.625H17.93L16.9046 18.8281Z"
+                                            fill="#74839F" />
+                                    </svg>
+
+                                    <span>Juror Management</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="previous-scheduled-clerk.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                        fill="none">
+                                        <path
+                                            d="M16.3055 8.37527V1.65705C16.3055 1.36582 16.0694 1.12971 15.7781 1.12971H13.1988V0.527344C13.1988 0.236109 12.9627 0 12.6715 0C12.3802 0 12.1441 0.236109 12.1441 0.527344V1.12971H8.68008V0.527344C8.68008 0.236109 8.44397 0 8.15273 0C7.8615 0 7.62539 0.236109 7.62539 0.527344V1.12971H4.16134V0.527344C4.16134 0.236109 3.92523 0 3.634 0C3.34276 0 3.10665 0.236109 3.10665 0.527344V1.12971H0.527344C0.236109 1.12971 0 1.36582 0 1.65705V15.7782C0 16.0694 0.236109 16.3055 0.527344 16.3055H8.37527C9.39491 17.3502 10.8174 18 12.389 18C15.4829 18 18 15.483 18 12.3891C18 10.8174 17.3502 9.39491 16.3055 8.37527ZM1.05469 2.1844H15.2508V4.51877H1.05469V2.1844ZM1.05469 15.2508V5.57346H15.2508V7.56464C14.4123 7.06542 13.4337 6.77813 12.3891 6.77813C9.29521 6.77813 6.77813 9.29517 6.77813 12.3891C6.77813 13.4337 7.06542 14.4124 7.56464 15.2508H1.05469ZM12.389 16.9453C9.87673 16.9453 7.83278 14.9014 7.83278 12.3891C7.83278 9.87673 9.87669 7.83281 12.389 7.83281C14.9014 7.83281 16.9453 9.87676 16.9453 12.3891C16.9453 14.9014 14.9014 16.9453 12.389 16.9453Z"
+                                            fill="#74839F" />
+                                        <path
+                                            d="M14.8273 10.4044L11.126 13.3289L10.3069 12.2922C10.1025 12.0335 9.72707 11.9895 9.46839 12.1939C9.20972 12.3983 9.1657 12.7737 9.37008 13.0324L10.5593 14.5375C10.7637 14.7961 11.1391 14.8402 11.3978 14.6358L15.5675 11.3412C15.8262 11.1368 15.8702 10.7614 15.6658 10.5027C15.4614 10.2441 15.086 10.2001 14.8273 10.4044Z"
+                                            fill="#74839F" />
+                                    </svg>
+                                    <span> Previous Scheduled</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="message-clerk.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                        fill="none">
+                                        <path
+                                            d="M16.418 0.144531H1.58203C0.710789 0.144531 0 0.854547 0 1.72656V12.2734C0 13.1425 0.707625 13.8555 1.58203 13.8555H16.418C17.287 13.8555 18 13.1478 18 12.2734V1.72656C18 0.8575 17.2924 0.144531 16.418 0.144531ZM16.1995 1.19922L9.03354 8.36522L1.80559 1.19922H16.1995ZM1.05469 12.055V1.93993L6.13403 6.97571L1.05469 12.055ZM1.80046 12.8008L6.883 7.71824L8.66391 9.48386C8.87006 9.68826 9.20275 9.68759 9.40806 9.48224L11.1445 7.74577L16.1995 12.8008H1.80046ZM16.9453 12.055L11.8903 7L16.9453 1.94495V12.055Z"
+                                            fill="#74839F" />
+                                    </svg>
+                                    <span>Messages</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bulk-message-clerk.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                        fill="none">
+                                        <path
+                                            d="M16.418 0.144531H1.58203C0.710789 0.144531 0 0.854547 0 1.72656V12.2734C0 13.1425 0.707625 13.8555 1.58203 13.8555H16.418C17.287 13.8555 18 13.1478 18 12.2734V1.72656C18 0.8575 17.2924 0.144531 16.418 0.144531ZM16.1995 1.19922L9.03354 8.36522L1.80559 1.19922H16.1995ZM1.05469 12.055V1.93993L6.13403 6.97571L1.05469 12.055ZM1.80046 12.8008L6.883 7.71824L8.66391 9.48386C8.87006 9.68826 9.20275 9.68759 9.40806 9.48224L11.1445 7.74577L16.1995 12.8008H1.80046ZM16.9453 12.055L11.8903 7L16.9453 1.94495V12.055Z"
+                                            fill="#74839F" />
+                                    </svg>
+                                    <span>Bulk Messages</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="browse_clerk.html">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.904 2.1094H16.2422H16.2421V1.05468C16.2421 0.473131 15.769 0 15.1874 0H2.81259C2.23104 0 1.75791 0.473131 1.75791 1.05468V2.1094H1.09606C0.491693 2.1094 0 2.6011 0 3.20546V14.0915C0 14.6959 0.491658 15.1875 1.09603 15.1875H7.15202L6.60408 17.2969H5.83584C5.64168 17.2969 5.48428 17.4543 5.48428 17.6484C5.48428 17.8426 5.64168 18 5.83584 18H12.1641C12.3582 18 12.5156 17.8426 12.5156 17.6484C12.5156 17.4543 12.3582 17.2969 12.1641 17.2969H11.3971L10.8457 15.1875H15.186C15.3268 15.2552 15.4823 15.291 15.6435 15.291C15.8048 15.291 15.9603 15.2552 16.1011 15.1875H16.904C17.5083 15.1875 18 14.6959 18 14.0915V3.20546C18 2.6011 17.5083 2.1094 16.904 2.1094ZM16.2422 2.81252H16.904C17.1206 2.81252 17.2969 2.9888 17.2969 3.20543V13.0781H16.2421L16.2422 2.81252ZM2.46107 1.05468C2.46107 0.860833 2.61878 0.703122 2.81263 0.703122H15.1874C15.3813 0.703122 15.539 0.860833 15.539 1.05468V1.40624H10.582C10.3878 1.40624 10.2304 1.56364 10.2304 1.75781C10.2304 1.95197 10.3878 2.10937 10.582 2.10937H15.539V12.641L12.6333 9.73543C13.0051 9.10726 13.2188 8.37503 13.2188 7.59372C13.2188 5.26751 11.3263 3.37499 9.00007 3.37499C6.67386 3.37499 4.78134 5.26751 4.78134 7.59372C4.78134 9.91993 6.67386 11.8125 9.00007 11.8125C9.78138 11.8125 10.5136 11.5987 11.1418 11.227L12.9929 13.0781H2.46107V2.10937H7.4179C7.61207 2.10937 7.76947 1.95197 7.76947 1.75781C7.76947 1.56364 7.61207 1.40624 7.4179 1.40624H2.46107V1.05468ZM9.0001 11.1093C7.0616 11.1093 5.48449 9.53223 5.48449 7.59372C5.48449 5.65518 7.0616 4.07811 9.0001 4.07811C10.9386 4.07811 12.5157 5.65521 12.5157 7.59372C12.5157 9.53226 10.9386 11.1093 9.0001 11.1093ZM1.09606 2.81252H1.75795V13.078H0.703263C0.703228 13.078 0.703193 13.078 0.703157 13.078V3.20546C0.703122 2.9888 0.879395 2.81252 1.09606 2.81252ZM0.703122 14.0915V13.7812H0.703228H13.696L14.3992 14.4844H1.09606C0.879395 14.4844 0.703122 14.3081 0.703122 14.0915ZM10.6703 17.2969H7.33054L7.87845 15.1875H10.1189L10.6703 17.2969ZM15.395 14.4858L11.7227 10.8135C11.9018 10.6618 12.0681 10.4955 12.2199 10.3163L15.8921 13.9886C15.958 14.0544 15.9942 14.1427 15.9942 14.2371C15.9942 14.3316 15.958 14.4199 15.8921 14.4858C15.8263 14.5516 15.738 14.5879 15.6436 14.5879C15.5491 14.5879 15.4608 14.5516 15.395 14.4858ZM16.904 14.4844H16.6685C16.7245 14.2506 16.6997 14.0013 16.5944 13.7812H17.2969V14.0915C17.2969 14.3081 17.1206 14.4844 16.904 14.4844Z"
+                                            fill="#74839F" />
+                                        <path
+                                            d="M9.00011 2.10938C9.19427 2.10938 9.35167 1.95198 9.35167 1.75781C9.35167 1.56364 9.19427 1.40625 9.00011 1.40625H8.99986C8.80569 1.40625 8.64844 1.56364 8.64844 1.75781C8.64844 1.95198 8.80594 2.10938 9.00011 2.10938Z"
+                                            fill="#74839F" />
+                                        <path
+                                            d="M9.00024 4.78125C7.44943 4.78125 6.18774 6.04294 6.18774 7.59375C6.18774 9.14456 7.44943 10.4062 9.00024 10.4062C10.5511 10.4062 11.8127 9.14456 11.8127 7.59375C11.8127 6.04294 10.5511 4.78125 9.00024 4.78125ZM9.00024 9.70312C7.83713 9.70312 6.89087 8.75686 6.89087 7.59375C6.89087 6.43064 7.83713 5.48438 9.00024 5.48438C10.1634 5.48438 11.1096 6.43064 11.1096 7.59375C11.1096 8.75686 10.1634 9.70312 9.00024 9.70312Z"
+                                            fill="#74839F" />
+                                    </svg>
+
+                                    <span>Browse Sessions</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- sidebar-menu  -->
+                </div>
+                <!-- sidebar-content  -->
+                <div class="sidebar-footer">
+                    <p class="text-center">copyright © All rights reserved</p>
+                </div>
+            </nav>
+            <!-- sidebar-wrapper  -->
+            <main class="page-content" id="previous-scheduled-ses-g">
+                <div class="container-fluid">
+
+                    <div class="row lft_content tog-pad newadd_class add_class">
+                        <div class="col-sm-12 col-md-8 col-lg-8 pl-0 tog-pad-left">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2 class="title">Create / Edit Session</h2>
+                                </div>
+
+                            </div>
+                            <div class="inner-content-wrapper mt-0">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4 col-sm-4 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Session Name</label>
+                                            <input type="text" value="Session Name 0120" placeholder="Session Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-8 col-sm-8 col-xs-12 schedule-content mb-30">
+                                        <div class="maingroup-ra">
+                                            <div class="form_group timedate_wraps">
+                                                <label>Date</label>
+                                                <span><input type="text" value="06/04/2020" placeholder="">
+                                                    <img src="./images/clerk/calendar-blue.png" alt="icon"></span>
+
+                                            </div>
+                                            <div class="form_group  timedate_wraps">
+                                                <label>Time</label>
+                                                <span><input value="08:45" type="text" placeholder="">
+                                                    <img src="./images/clerk/clock-white.png" alt=""></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4 col-sm-4 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Session #</label>
+                                            <input type="text" value="SessionID1654641" placeholder="Session #">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-8 col-sm-8 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Description</label>
+                                            <input type="text" class="w-100" placeholder="Description">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>Attorneys</h2>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4 col-sm-4 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Prosecutor Attorney</label>
+                                            <select name="" id="">
+                                                <option value="">Steve Austin</option>
+                                                <option value="">Steve Austin1</option>
+                                                <option value="">Steve Austin2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-8 col-sm-8 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Defense Attorney</label>
+                                            <select name="" id="">
+                                                <option value="">Blue & Gary LLP</option>
+                                                <option value="">Blue & Gary LLP1</option>
+                                                <option value="">Blue & Gary LLP2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4 col-sm-4 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Judge</label>
+                                            <select name="" id="">
+                                                <option value="">Mr. Kit Harrington</option>
+                                                <option value="">Mr. Kit Harrington1</option>
+                                                <option value="">Mr. Kit Harrington2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-8 col-sm-8 col-xs-12 schedule-content mb-30">
+                                        <div class="form_group">
+                                            <label>Clerk</label>
+                                            <select name="" id="">
+                                                <option value="">Scarlett Johansson</option>
+                                                <option value="">Scarlett Johansson1</option>
+                                                <option value="">Scarlett Johansson2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="inner-content-wrapper new_material">
+                                <h2>Upload Material</h2>
+                                <div class="assignment-sec sen-sa-as-g">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 assign-left">
+                                            <div class="upload-wrapper">
+                                                <img src="./images/juror/upload.png" class="drag-img">
+                                                <p class="drag-text">Drag and Drop your files here</p>
+                                                <p class="drag-text">or</p>
+                                                <input type="file" class="upload-file-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 assign-right">
+                                            <div class="uploading-wrapper">
+                                                <div class="row">
+                                                    <!--first  -->
+                                                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 assignment-format">
+                                                        <div class="row">
+                                                            <div class="col-3 format-icon ">
+                                                                <img src="./images/juror/pdf.png"
+                                                                    class="upload-icon-format">
+                                                            </div>
+
+                                                            <div class="col-9 format-details p-0">
+                                                                <h3>Assignment file-1.pdf</h3>
+                                                                <span>512kb/512kb</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 upload-status">
+                                                        <div class="progress prog-bar">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 100%" aria-valuenow="100"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+
+                                                        </div>
+                                                        <span class="prog-percen">100%</span>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 upload-remove">
+                                                        <a href="#" class="can-txt-tt">X Remove</a>
+                                                    </div>
+                                                    <!-- end first -->
+
+                                                    <!--second -->
+                                                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 assignment-format">
+                                                        <div class="row">
+                                                            <div class="col-3 format-icon ">
+                                                                <img src="./images/juror/excell.png"
+                                                                    class="upload-icon-format">
+                                                            </div>
+
+                                                            <div class="col-9 format-details p-0">
+                                                                <h3>Assignment file-1.pdf</h3>
+                                                                <span>512kb/512kb</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 upload-status">
+                                                        <div class="progress prog-bar">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 65%" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+
+                                                        </div>
+                                                        <span class="prog-percen">65%</span>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 upload-remove">
+                                                        <a href="#" class="can-txt-tt">X Cancel</a>
+                                                    </div>
+                                                    <!-- end second -->
+
+
+                                                    <!--third  -->
+                                                    <div
+                                                        class="col-lg-4 col-md-5 col-sm-6 col-xs-12 assignment-format ">
+                                                        <div class="row">
+                                                            <div class="col-3 format-icon ">
+                                                                <img src="./images/juror/notepad.png"
+                                                                    class="upload-icon-format">
+                                                            </div>
+
+                                                            <div class="col-9 format-details p-0">
+                                                                <h3>Assignment file-1.pdf</h3>
+                                                                <span>512kb/512kb</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 upload-status">
+                                                        <div class="progress prog-bar">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 10%" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+
+                                                        </div>
+                                                        <span class="prog-percen">10%</span>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 upload-remove">
+                                                        <a href="#" class="can-txt-tt">X Remove</a>
+                                                    </div>
+                                                    <!-- end third -->
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="create_session">
+                                <a href="sessions-trials-list-edit-clerk1.html"><button class="sess-create-pri">Create
+                                        Session</button></a>
+                                <a href="sessions_Trials_List-clerk1.html"><button
+                                        class="sess-cancel">Cancel</button></a>
+                            </div>
+                            <div class="create_poll">
+                                <button class="create_poll" data-toggle="modal" data-target="#list_of_jurors">Create
+                                    Potential Jurors</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <!-- page-content" -->
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="list_of_jurors">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="headlist_junors">
+                        <h2>List Of Jurors</h2>
+                        <input type="search" placeholder="Search Jurors">
+                    </div>
+                    <div class="list_of_junors">
+                        <ul>
+                            <li>
+                                <img src="./images/clerk/stud_4.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_1.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Ben Affleck</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_2.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_3.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Ben Affleck</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_6.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_7.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Ben Affleck</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_4.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_1.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_2.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Ben Affleck</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_3.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>justin Theroux</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_6.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_7.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>austin Theroux</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+
+                            <li>
+                                <img src="./images/clerk/stud_4.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_1.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_2.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_3.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_6.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Ben Affleck</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span class="close_wide"><img src="./images/clerk/w_close.png" alt="icon"></span>
+                            </li>
+                            <li>
+                                <img src="./images/clerk/stud_7.png" alt="icon">
+                                <div class="detailsList_jun">
+                                    <h2>Stuart Binny</h2>
+                                    <span>Juror</span>
+                                </div>
+                                <span><img src="./images/clerk/w_tick.png" alt="icon"></span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="create_session">
+                        <button class="sess-create-pri">Create</button>
+                        <button class="sess-cancel" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

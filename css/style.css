@@ -1,0 +1,3994 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+/* CSS reset */
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,
+th,td{margin:0;padding:0;}html,body{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}input{border:1px solid #b0b0b0;padding:3px 5px 4px;color:#979797;width:190px;}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;font-family: 'Asap', sans-serif;}q:before,q:after{content:'';}abbr,acronym{border:0;}
+
+label{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: pointer;
+}
+body{font-family: 'Open Sans', sans-serif;}
+
+
+input, button, textarea,select{outline: none !important;}
+a{text-decoration: none;}
+a:focus, a:hover { text-decoration: none;}
+ 
+body{font-family: 'Open Sans', sans-serif;}
+button, a{outline:none;}
+
+
+/* User As by 14-12 */
+
+.user-as-bg {
+  height: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(to bottom,#1F3D74 60%,#EDF3FF 40%);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+
+.user-inner-g p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.user-select-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-inner-g {
+  width: auto;
+  height: auto;
+}
+
+.usr-mod-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: #242629 !important;
+  margin-bottom: 5px !important;
+}
+
+
+
+
+/* end User As by 14-12 */
+
+/* First Component - Juror */
+
+.lg-b-gg {
+  background: #EDF3FF;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapp-sec-g {
+  height: 40%;
+  background: linear-gradient(111.34deg, #1F3D74 9.1%, #325AA3 93.45%);
+  position: absolute;
+  top: 0;
+  display: block;
+  z-index: 0;
+  width: 100%;
+}
+
+.login-area-g {
+  z-index: 1;
+  position: relative !important;
+  height: 600px;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  background: url(../images/login-bg.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position-x: 10% !important;
+}
+
+.login-bg-wrapper-g {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 40px 36px;
+  max-width: 430px;
+  max-height: 470px;
+  text-align: center;
+  min-width: 430px;
+}
+
+.login-hd-t-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+
+.noti-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: #767676;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.def-pp-txt {
+  text-decoration: underline !important;
+  color: #1f3d74 !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+}
+
+.submit-g {
+  background: linear-gradient(111.34deg, #1F3D74 9.1%, #325AA3 93.45%);
+  border-radius: 100px;
+  width: 255px;
+  height: 50px;
+  border: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.login-inner-g .logo-txt-g {
+  margin-bottom: 20px;
+}
+
+.logo-sub-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.login_label-g {
+  display: block;
+  text-align: left;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+  margin-bottom: 9px;
+}
+
+
+.login-cred-frm-g {
+    margin-bottom: 30px;
+}
+
+.login-txt-g {
+  background: #FFFFFF;
+  border: 1px solid #CACED6;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 100%;
+  height: 45px;
+  padding-left: 30px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D2D2D;
+}
+
+
+.mb-20-g {
+  margin-bottom: 20px;
+}
+
+.noti-txt-g span {
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+.log-fc-g:focus {
+  background: #EEF3FB;
+  border: 1px solid #2C5193;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2B4F90;
+}
+
+.mbil-last-g::placeholder{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+color: #707070;
+}
+/* First Component - Juror end by 14-12 */
+
+
+/* OTP-Verification-Register-juror by 15-12 */
+
+
+.otp-verify-g .login-hd-t-g {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.otp-verify-g .login-hd-t-g svg {
+  margin-right: 20px;
+}
+
+.juror-num-sec {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background: #F4F4F4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.juror-num-sec label.login_label-g {
+  margin-bottom: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.juro-num-d-g {
+  margin-bottom: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2B4F90;
+}
+.otp-not-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #626262;
+  margin-bottom: 40px;
+}
+
+
+.otp-not-g span {
+  opacity: 1 !important;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.verify-sec-g {
+  background: #FFFFFF;
+  border: 1px solid #22417B;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  flex-wrap: nowrap;
+}
+
+.verify-txtbx-g {
+  height: 100%;
+  border: 0;
+  width: 100%;
+  background: transparent;
+  padding-left: 15px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D2D2D;
+}
+
+.verify-txtbx-g::placeholder{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #5E5E5E;
+}
+
+.verify-btn-g {
+  background: linear-gradient(111.34deg, #1F3D74 9.1%, #325AA3 93.45%);
+  border-radius: 100px;
+  width: 120px;
+  height: 100%;
+  border: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  
+}
+
+.resend-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 40px;
+  color: #757575;
+  margin-bottom: 0px;
+  
+}
+
+.resend-txt-g a {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #30579f;
+  margin-left: 5px;
+}
+/* OTP-Verification-Register-juror by 15-12 end */
+
+
+/* Authenticate Account - Register by 15-12 */
+.auth-bg-g{
+background-image: url(../images/auth-bg.png) !important;
+}
+
+.dmv-sec {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #CACED6;
+  box-sizing: border-box;
+  border-radius: 100px;
+  height: 45px;
+  margin-bottom: 40px;
+}
+
+.card-ic {
+  padding: 0px 20px;
+  border-right: 1px solid #B2B5BB;
+}
+
+/* End Authenticate Account - Register */
+
+/*  Register by 15-12 */
+
+.register-bg-g{
+  background-image: url(../images/register-bg.png) !important;
+  background-position-x: unset !important;
+  }
+
+  .register-bg-g .login-hd-t-g {
+    margin-bottom: 30px !important;
+}
+  
+.login-area-g.container.otp-verify-g.register-bg-g .noti-txt-g {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.form-inner-g {
+  margin-bottom: 10px;
+}
+
+.bg-grey-g {
+  background: #EAEAEA;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5A5A5A;
+  border: 0;
+}
+
+.form-sec-g {
+  overflow-y: scroll;
+  max-height: 300px;
+  padding-right: 15px;
+}
+
+.double-form-g {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.double-form-g .form-inner-g {
+  padding-right: 10px;
+}
+  
+/*  Register by 15-12 */
+
+/*  login-juror by 15-12 */
+.login-juru-bg{
+  background-image: url(../images/login-bgg.png) !important;
+  background-position-x: unset !important;
+  }
+
+  .login-area-g.container.login-juru-bg h2.login-hd-t-g {
+    margin-bottom: 30px;
+}
+
+.log-sb-tt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #626262;
+  margin-bottom: 20px;
+}
+
+
+/*  login-juror by 15-12 */
+
+
+
+/* Dashboard - Juror start 15-12 */
+.dashboard_first{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard_first h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: 333333;
+}
+.first_sub{
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 55px;
+}
+.first_sub img{
+  margin-right: 12px;
+}
+.first_sub h2{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #868686;
+}
+.dashboard_first h2 span{
+  color: #000000;
+}
+.first_sub h3{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #26282C;
+  max-width: 100%;
+}
+span.span_check{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868686;
+}
+span.span_time{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  height: 25px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Check Out";
+  height: 20px;
+  width: 70px;
+  left: 5px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 14px;
+color: #FFFFFF;
+background: #E74C3C;
+box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.07);
+border-radius: 8px;
+padding-top: 2px;
+padding-left: 12px;
+}
+
+a.user-name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #212121;
+}
+
+input:checked + .slider {
+  background: #F0F0F0;
+box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.13);
+border-radius: 8px;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.start_hear{
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 85px;
+  overflow-y: scroll;
+}
+.start_hear h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.check_box_width{
+  width: 15px;
+}
+.next_hear{
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 85px;
+  overflow-y: scroll;
+}
+.next_hear h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+.start_scroll h2{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+.dashboard_tabel_main{
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 20px !important;
+  margin: 0px 40px 0px 25px;
+}
+.dashboard_table{
+  margin-top: 15px;
+  width: 100%;
+}
+.dashboard_tabel_main h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.dashboard_table thead tr th,.dashboard_table tbody tr td{
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.dashboard_table thead tr th{
+  padding: 9px 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.dashboard_table tbody tr td{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #c5c5c5;
+  padding: 15px 10px;
+}
+.text_center{
+  text-align: center;
+}
+
+/* Dashboard - Juror end 15-12 */
+
+/* start here start 15-12 */
+
+.start_hear_main{
+  margin: 20px;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+}
+.start_img{
+  width: 50px;
+}
+.start_img img{
+  width: 100%;
+}
+.start_img h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-align: center;
+}
+.start_content{
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  padding: 18px 28px;
+  width: auto;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+.start_content h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 29px;
+  color: #303030;
+  text-align: left;
+}
+.start_content.background_white{
+  background: #FFFFFF;
+}
+.start_here_sub {
+  display: flex;
+}
+.mt-50{margin-top: 50px;}
+.back_light{background: #F4F7FD;}
+/* start here end 15-12 */
+
+/* sessions Details start 16-12 */
+
+.attor_back{
+  background: #F8F8F8;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  width: 270px !important;
+  padding: 10px 10px 20px 10px;
+}
+h4.prose_attor{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #325AA3;
+  margin-top: 20px;
+}
+.mt-30{margin-top: 30px;}
+.mt-10{margin-top: 10px;}
+.pb-10{padding-bottom: 10px;}
+.mt-20{margin-top: 20px;}
+.mb-30{margin-bottom: 30px;}
+
+/* sessions Details end 16-12 */
+
+
+/* Dashboard - Juror start 15-12 */
+.dashboard_first{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard_first h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: 333333;
+}
+.first_sub{
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
+.first_sub img{
+  margin-right: 12px;
+}
+.first_sub h2{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #868686;
+}
+.dashboard_first h2 span{
+  color: #000000;
+}
+.first_sub h3{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #26282C;
+}
+span.span_check{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868686;
+}
+span.span_time{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a span {
+  margin-left: 10px;
+  margin-left: 10px;
+  font-family: Open Sans !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+  display: flex !important;
+  align-items: center !important;
+  color: #74839F !important;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a svg {
+  min-width: 18px;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a.active svg path {
+  fill: white;
+}
+
+/* Dashboard - Juror end 15-12 */
+
+/* Previous Sessions - Juror by 15-12 */
+h2.title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+select#Teacher {
+ 
+  top: 2px;
+  min-height: 31px;
+}
+
+.table-head-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+main#previous-scheduled-ses-g .table-sec {
+  margin-top: 15px;
+}
+
+.inner-content-wrapper .table thead td {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+}
+
+.inner-content-wrapper .table tbody td {
+  color:  #a7a7a7 !important;
+  font-family: Open Sans !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+}
+
+tr.heading-row td {
+  font-family: Open Sans !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+}
+
+#previous-scheduled-det-g button.back-btn {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px 20px;
+}
+
+#previous-scheduled-det-g .heading-dash {
+  display: flex;
+  align-items: center;
+}
+
+.inner-head {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0D1426;
+}
+
+.schedule-sub-head {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7D7D7D;
+  margin-bottom: 10px;
+}
+
+.schedule-content p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0D1426;
+}
+
+
+.bg-gr-g {
+  background: #F8F8F8;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.gr-lb-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7D7D7D;
+  margin-bottom: 20px;
+}
+
+.blu-hd-g {
+  font-family: Open Sans !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+  color: #325AA3 !important;
+}
+
+.det-hh-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0d1426;
+  margin-bottom: 10px;
+}
+
+.downloat-btn {
+  padding: 6px 20px;
+}
+
+.down-all {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #325AA3;
+}
+
+.last-flw-g {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.progress-bar {
+  background-color: #325AA3;}
+
+  .feedback .review-content {
+    min-height: 153px;
+}
+
+.help-sec.review-content.mt-3 {
+  width: 96%;
+  margin: 0px auto;
+}
+
+.review-content p {
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #636363;
+}
+
+.download-sec.edit-mat .download-logo {
+  text-align: center;
+}
+
+.download-sec.edit-mat .col-lg-9.col-md-9.col-sm-12.col-xs-12.download-detail h3.download-head {
+  text-align: left !important;
+  margin-bottom: 0px;
+}
+
+.download-sec.edit-mat .col-lg-9.col-md-9.col-sm-12.col-xs-12.download-detail .size-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items:flex-start;
+  color: #C6C6C6;
+  text-align: left !important;
+  margin-top: 5px;
+}
+
+.download-sec.edit-mat .col-lg-9.col-md-9.col-sm-12.col-xs-12.download-detail {
+  align-items: baseline;
+}
+
+.send-btn-g {
+  font-family: Open Sans !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  line-height: 15px !important;
+  color: #FFFFFF !important;
+  background: #325AA3 !important;
+  border-radius: 7px !important;
+  width: 78px !important;
+  height: 25px !important;
+  position: relative !important;
+  margin-right: 10px;
+}
+
+.rt-bn {
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.change-pw-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #325AA3 !important;
+  margin-top: 10px;
+  cursor: pointer !important;
+}
+
+.pswd-eye {
+  position: absolute;
+  left: unset !important;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  cursor: pointer;
+  right: 12px !important;
+}
+
+.profile-data .default-input {
+
+  max-width: unset !important;
+}
+
+.profile-data.password-show {
+  max-width: 240px;
+}
+/* Previous Sessions - Juror end by 15-12 */
+  /* popup */
+  .pp-hd {
+    display: flex;
+    align-items: center;
+    background: #2B4F90;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .pp-hd h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+  /* identical to box height */
+    color: #FFFFFF;
+    margin-bottom: 0px;
+  }
+  
+  div#popup_body {
+    background: white;
+    background: #FCFCFC;
+    /* border: 1px solid #E3E3E3; */
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  div#class_popup {
+    max-width: 500px !important;
+  }
+  
+  .pp-prof {
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .pp-prof img {
+    max-width: 54px;
+    min-width: 54px;
+    border-radius: 50px;
+  }
+  
+  .pp-prof-det {
+    margin-left: 20px;
+  }
+  
+  .pp-prof-det h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    /* line-height: 0px; */
+  /* identical to box height */
+    color: #2C2C2C;
+    margin-bottom: 10px !important;
+  }
+  
+  .pp-prof-det p {
+    margin-bottom: 0px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+  /* identical to box height */
+    color: #000000;
+    opacity: 0.6;
+    margin-top: 10px !important;
+  }
+  
+  .p-d-g {
+      padding: 20px;
+  }
+  
+  .pp-prof {
+      border-bottom: 1px solid #E3E3E3;
+      padding-bottom: 20px;
+  }
+  
+  .select-option-g .label-txt-g {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #7D7D7D;
+      margin: 20px 0px;
+  }
+  
+  .selc-inner-g input[type="radio"] {
+      margin: 0px !important;
+  }
+  
+  label.container span.checkmark {
+      top: 2px;
+  }
+  
+  
+  /* The container */
+  .selc-inner-g .container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  
+  padding-right: 0px;
+  color: #343434;
+  }
+  
+  /* Hide the browser's default radio button */
+  .selc-inner-g .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: white;
+      border-radius: 50%;
+      border: 2px solid #84878D;
+      box-sizing: border-box;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  
+  
+  /* When the radio button is checked, add a blue background */
+  .selc-inner-g .container input:checked ~ .checkmark {
+   
+      border: 3px solid #2B4F90;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .selc-inner-g .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  
+  .select-ic-sec {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .selc-inner-g {
+      width: 50% !important;
+  }
+  
+  .pp-txt-g {
+      background: #FCFCFC;
+      border: 1px solid #D2D2D2 !important;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      padding: 20px;
+      max-height: 100px !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      margin-bottom: 20px;
+  }
+  
+  .p-d-g .upload-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+  }
+  
+  .upp-latt p.drag-text {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px !important;
+      line-height: 18px !important;
+      display: block !important;
+      /* align-items: center; */
+      text-align: center !important;
+      color: #000000 !important;
+      margin-bottom: 5px !important;
+  }
+  
+  .upp-latt .upload-file-input::before{
+      text-align: end;
+  }
+  
+  .p-d-g input.upload-file-input {
+      background: none !important;
+      border: none !important;
+      padding: 0px !important;
+      margin: 0px auto !important;
+      text-align: center !important;
+      height: 30px !important;
+      /* width: max-content !important; */
+  }
+  
+  
+  .p-d-g .upload-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      min-height: 100px !important;
+      max-height: 100px !important;
+  }
+  
+  .upp-latt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 200px !important;
+      margin-left: 10px !important;
+  }
+  
+  .assignment-format.p-0.pro-in-g {
+      display: flex;
+      align-items: center;
+  }
+  
+  .prog-b-gg .progress.prog-bar {
+      width: 74px !important;
+      margin: 0px !important;
+  }
+  
+  .prog-b-gg {
+      display: flex;
+      align-items: center;
+  }
+  
+  
+  .prog-b-gg .progress-bar {
+      background: #325AA3 !important;
+  }
+  
+  .prog-b-gg p {
+      font-family: Open Sans !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      font-size: 12px !important;
+      line-height: 16px !important;
+      display: flex;
+      align-items: center !important;
+      color: #000000 !important;
+      margin-bottom: 0px !important;
+      margin-left: 10px;
+  }
+  
+  .p-d-g .upload-wrapper .ulop-iiner {
+      width: max-content !important;
+  }
+  
+  .prog-b-gg {
+      width: max-content !important;
+  }
+  
+  .format-details.p-0 {
+      width: max-content !important;
+  }
+  
+  .can-txt-tt {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      color: #A2A2A2;
+  }
+  
+  .can-txt-tt:hover {
+     color: #E23232;
+     text-decoration: none;
+  }
+  
+  .assignment-format.p-0.pro-in-g {
+      display: flex;
+      align-items: center;
+      padding: 10px 0px !important;
+      justify-content: space-between;
+      
+      margin-bottom: 0px !important;
+  }
+  
+  #c_popup {
+      background: #FCFCFC;
+      border: 1px solid #E3E3E3;
+      box-sizing: border-box;
+      border-radius: 25px;
+      width: 320px;
+      height: 348px;
+  }
+  
+  #c_popup {
+      padding: 50px;
+      text-align: center;
+  }
+  
+  #c_popup h2 {
+      margin: 30px auto;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #343434;
+  }
+  
+  .view-to-dash {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #2D5295;
+      border-radius: 100px;
+      width: 220px;
+      height: 42px;
+      border: 0;
+  }
+  /* end popup */
+
+  .fc-toolbar.fc-header-toolbar .fc-left {
+    display: none;
+}
+
+.upload-file-input {
+ width: 190px !important;
+  border: 0;
+  height: 36px;
+  margin: 0px auto;
+  display: block;
+}
+
+.cal-hd-g {
+  position: relative;
+}
+
+.cal-hd-g .title {
+  position: absolute;
+  top: 7px;
+}
+
+#calendar .fc-right h2 {
+  background: white !important; 
+}
+
+.fc-right button.fc-prev-button.fc-button.fc-button-primary ,.fc-right button.fc-next-button.fc-button.fc-button-primary {
+  background: #F1F6FF !important;
+  color: #325AA3 !important;
+}
+
+.table-heads{
+  margin-bottom: 20px;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.table-sec {
+  margin-top: 20px;
+}
+
+.table tr td span img {
+  float: right;
+  margin-top: 0px;
+}
+
+
+
+/*======================================================Clerk Module================================*/
+.clerk_module_page .sidebar-menu ul li a span {
+  font-size: 14px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clerk_module_page .sidebar-menu ul li a:hover svg,
+.clerk_module_page .sidebar-menu ul li a:hover svg path {
+  fill: white !important;
+}
+
+.custom-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-flex h2 {
+  margin: 0;
+}
+
+input.page-numb {
+  width: 50px;
+}
+
+.custom-flex button {
+  background: transparent;
+  border: 1px solid #2a4e90;
+  color: #2b4f92;
+  padding: 4px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+
+.pool_summary {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pool_summary_detail {
+  width: 33.3%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pool_summary_detail label {
+  color: #7D7D7D;
+  margin: 0;
+}
+
+.pool_summary_detail span {
+  color: #0D1426;
+  font-size: 16px;
+}
+
+span.pending {
+  color: #FFAA45;
+}
+
+.mainclerk_dates {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainclerkdate_forms {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainclerkdate_forms label {
+  color: #7E7E7E;
+  font-size: 14px;
+}
+
+.ctn_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+
+.ctn_btn button {
+  margin: 0 10px;
+}
+
+.clk-btn-prmary {
+  background-color: #2D5295;
+  color: #fff;
+  border: 1px solid #2D5295;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.clk-btn-secondary {
+  background-color: transparent;
+  color: #2D5295;
+  border: 1px solid #2D5295;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.mainclerkdate_forms input {
+  background: #F8FAFF;
+  width: 250px !important;
+  height: 37px;
+  color: #1F1F1F;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #D6E3FA;
+}
+
+.maindata_clerk {
+  position: relative;
+}
+
+.maindata_clerk span {
+  position: absolute;
+  left: 206px;
+  padding: 6px 11px;
+  background: #F3F4F9;
+  border-left: 1px solid #D6E3FA;
+  top: 1px;
+}
+
+.maindata_clerk input {
+  padding-right: 50px;
+}
+
+
+/* Dashboard - Juror start 15-12 */
+.dashboard_first {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard_first h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: 333333;
+}
+
+.first_sub {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 55px;
+}
+
+.first_sub img {
+  margin-right: 12px;
+}
+
+.first_sub h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #868686;
+}
+
+.dashboard_first h2 span {
+  color: #000000;
+}
+
+.first_sub h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #26282C;
+  max-width: 100%;
+}
+
+span.span_check {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868686;
+}
+
+span.span_time {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Check Out";
+  height: 20px;
+  width: 70px;
+  left: 5px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background: #E74C3C;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-left: 12px;
+}
+
+a.user-name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #212121;
+}
+
+input:checked+.slider {
+  background: #F0F0F0;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.start_hear {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 85px;
+  overflow-y: scroll;
+}
+
+.start_hear h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.check_box_width {
+  width: 15px;
+}
+
+.next_hear {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 85px;
+  overflow-y: scroll;
+}
+
+.next_hear h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+.start_scroll h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.dashboard_tabel_main {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 20px !important;
+  margin: 0px 40px 0px 25px;
+}
+
+.dashboard_table {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.dashboard_tabel_main h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.clerk_module_page span.slider.round::before {
+  padding-top: 4px;
+}
+
+.clerk_module_page label.switch span.slider.round {
+  border-radius: 5px;
+}
+
+.dashboard_table thead tr th,
+.dashboard_table tbody tr td {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.dashboard_table thead tr th {
+  padding: 9px 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.dashboard_table tbody tr td {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #c5c5c5;
+  padding: 15px 10px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.page-wrapper.chiller-theme.toggled .dashboard_tabel_main {
+  margin-bottom: 15px;
+}
+
+.ss_trails {
+  float: right;
+  background: #fff;
+  width: auto;
+  padding: 10px 15px;
+  border: 1px solid #D6E3FA;
+  display: flex;
+  align-items: center;
+}
+
+.ss_trails label,
+.ss_trails h4 {
+  float: left;
+  margin: 0;
+  font-size: 14px;
+  line-height: unset;
+}
+
+.ss_trails h4 {
+  margin: 0 11px;
+  font-weight: 600;
+}
+
+.ss_trails span {
+  font-size: 28px;
+  font-weight: 900;
+  display: inline-block;
+  padding-left: 25px;
+  line-height: unset;
+}
+
+/* Dashboard - Juror end 15-12 */
+
+.first_sub h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #868686;
+}
+
+span.date_bett {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #000;
+  padding-left: 10px;
+}
+
+span.three {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: right;
+  color: #000000;
+  padding-left: 50px;
+}
+
+.first_sub {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.junor-regcard {
+  width: 100%;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+.dashboard_register {
+  width: 100%;
+}
+
+.headjunor_recoard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 14px;
+  background: #325AA3;
+  color: #fff;
+  border-bottom: 1px solid #D6E3FA;
+}
+
+.headjunor_table {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background: #fff;
+  text-align: center;
+}
+
+
+
+.headjunor_table table {
+  border: 1px solid #D6E3FA;
+  width: 100%;
+  float: left;
+}
+
+.headjunor_table table tbody {
+  border-top: 1px solid #D6E3FA;
+}
+
+.headjunor_table table td,
+.headjunor_table table th {
+  border-right: 1px solid #D6E3FA;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.headjunor_table table th {
+  font-weight: 600;
+}
+
+.bodymesage_status {
+  width: 100%;
+  float: left;
+  padding: 10px;
+}
+
+.messge_status {
+  width: 100%;
+  float: left;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+}
+
+.headmesage_status {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 11px;
+  font-size: 14px;
+}
+
+.bodymesage_status ul li {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodymesage_status ul {
+  height: 75px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+span.cancelled {
+  background: #F45F4E;
+  border-radius: 100px;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 10px;
+  padding: 5px 12px;
+}
+
+
+span.pending {
+  background: #FFAA45;
+  border-radius: 100px;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 10px;
+  padding: 5px 16px;
+}
+
+.clerk_module_page table td a {
+  margin: 0 5px;
+}
+
+.bodymesage_status ul li button {
+  background: #325AA3;
+  border: 1px solid #D6E3FA;
+  color: #fff;
+  padding: 3px 15px;
+}
+
+.junor-regcard {
+  width: 100%;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+.dashboard_register {
+  width: 100%;
+}
+
+.headjunor_recoard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 14px;
+  background: #325AA3;
+  color: #fff;
+  border-bottom: 1px solid #D6E3FA;
+}
+
+.headjunor_table {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background: #fff;
+  text-align: center;
+}
+
+
+.headjunor_table table {
+  border: 1px solid #D6E3FA;
+  width: 100%;
+  float: left;
+}
+
+.headjunor_table table tbody {
+  border-top: 1px solid #D6E3FA;
+}
+
+.headjunor_table table td,
+.headjunor_table table th {
+  border-right: 1px solid #D6E3FA;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.headjunor_table table th {
+  font-weight: 600;
+}
+
+.bodymesage_status {
+  width: 100%;
+  float: left;
+  padding: 10px;
+}
+
+.messge_status {
+  width: 100%;
+  float: left;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+}
+
+.headmesage_status {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 11px;
+  font-size: 14px;
+}
+
+.bodymesage_status ul li {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodymesage_status ul {
+  height: 75px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bodymesage_status ul li button {
+  background: #325AA3;
+  border: 1px solid #D6E3FA;
+  color: #fff;
+  padding: 3px 15px;
+}
+
+.input-group.select_sessions select {
+  background: #2A4E8F;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 0 8px;
+}
+
+.input-group.select_sessions select option {
+  background: #fff;
+  color: #74839F;
+}
+
+/*Clerk Module*/
+
+
+/* ==========================================judge module====================================== */
+
+/* dashboard start */
+
+.inner-content-wrapper .table thead .dash td{
+  text-transform: lowercase !important;
+}
+span.date_bett{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #333333;
+  padding-left: 10px;
+}
+span.three{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: right;
+  color: #000000;
+  padding-left: 50px;
+}
+.pt{padding-top: 0px !important;}
+/*  dashboard end */
+
+/*  */
+
+td.table_head_title{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 10px;
+}
+h3.table_top_header{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+button.blue_round_button{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #325AA3;
+  border: 1.5px solid #325AA3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 10px 43px;
+  background: transparent;
+  float: right;
+}
+button.end_session{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+background: #325AA3;
+border-radius: 100px;
+padding: 10px 32px;
+border: 1px solid #325AA3;
+}
+
+
+.border_color_none{
+  border: none !important;
+}
+.mt{margin-top: 0px !important;}
+.mb-10{margin-bottom: 10px !important;}
+.back_orange{
+  background: #FFAB2E !important;
+}
+.wrap_space{white-space: nowrap;}
+.back_red{background: #F45F4E !important;}
+.ml-a{margin-left: auto;}
+
+
+.width_100per{width: 100%;}
+.mtb{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.mt-0{margin-top: 0px!important;}
+.zoom_img{
+  width: 100%;
+}
+.zoom_img img{width:100%;}
+#class_popup_1{width:100%;}
+.modal-dialog-centered_1{max-width: 800px;}
+.extra_1{
+  width: 100%;
+  text-align: center;
+  background: #2F569B;
+  padding: 27px 0px 25px;
+}
+.judge_popup_main{
+  padding: 0px !important;
+}
+.cont_extra_1{
+  text-align: center;
+}
+.cont_extra_1 h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.cont_extra_1 h2{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFDFD;
+  opacity: 0.7;
+}
+.pri-btn_1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #325AA3;
+  padding: 8px 13px;
+  background: #FFFFFF;
+  border: 1px solid #325AA3 !important;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.table-sec_1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating_popup{
+  border-top: 1px solid #DCE6F8;
+  border-bottom: 1px solid #DCE6F8;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 15px 22px;
+}
+.rating_popup h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7E7E7E;
+  display: inline-block;
+}
+.rating_star_img{
+  padding-left: 40px;
+}
+.rating_content{
+  display: flex;
+  justify-content: space-between;
+}
+.rating_content button{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #325AA3;
+  border-radius: 100px;
+  padding:10px 40px;
+  text-align: end;
+}
+.ratint_text{
+  padding-top: 8px;
+}
+.pt-15{padding-top: 15px !important;}
+.fs-16{font-size: 16px !important;}
+
+.feedback h6{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  padding:10px 20px;
+  background: #F3F4F9;
+  border: 1px solid #D4E0ED;
+  box-sizing: border-box;
+  margin: 20px 20px 20px 0px;;
+}
+.pl-20{padding-left: 20px;}
+.popup_bottom{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.popup_bottom button.rep_but{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding:10px 30px;
+  background: #325AA3;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+.popup_bottom button.dec_but{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #F7513F;
+  border-radius: 100px;
+  padding:10px 30px;
+}
+.pop_profile h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.pop_profile h2{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.pl-10{padding-left: 10px !important;}
+.feed_border{
+  border-top: 1px solid #DCE6F8;
+  border-bottom: 1px solid #DCE6F8;
+  margin: 0px 20px;
+}
+.feed_content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feed_content span{
+  padding-top: 8px;
+  padding-left: 15px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.radio_widrh{width: 40px;}
+.accept_radio{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.margin_mod{margin: 0px 0px 20px !important;}
+
+/* dashboard ends */
+
+
+/* radio*/
+
+
+/* The container */
+.container-r {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #262424;
+}
+
+/* Hide the browser's default radio button */
+.container-r input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.container-r .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 2px solid #9A9A9A;
+  border-radius: 50%;
+}
+
+
+
+/* When the radio button is checked, add a blue background */
+.container-r input:checked ~ .checkmark {
+  background-color: white;
+  border: 2px solid #2B4F90;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-r input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-r .checkmark:after {
+ 	top: 3px;
+	left: 3px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #2B4F90;
+}
+
+.sen-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+/* identical to box height */
+  color: #322F2F;
+  margin-bottom: 10px;
+}
+
+/* end radio */
+
+/*  checkbox */
+.mycheckbox input[type="checkbox"] {
+  display: none;
+}
+.mycheckbox input[type="checkbox"]+label {
+   background: url('../images/checkbox-on.png') no-repeat;
+   background-repeat: no-repeat;
+  width:20px;
+  height: 20px;
+}
+.mycheckbox input[type="checkbox"]:checked + label {
+  background: url('../images/checkbox-off.png');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+/* end check box */
+
+
+.send-to-p {
+  background: #FBFBFB;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 15px 30px;
+}
+
+.send-to-l-g {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mycheckbox {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+.mycheckbox label {
+  margin-bottom: 0px;
+  /* margin-top: 2px; */
+}
+
+span.chck-txt-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+/* identical to box height */
+  color: #262424;
+  margin-left: 5px;
+}
+
+.emil-sel-g {
+  background: #FCFCFC;
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+/* identical to box height */
+  color: #222222;
+  height: 45px;
+  padding-right: 10px;
+}
+
+.msg-tt-gg- {
+  background: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+  min-height: 233px;
+  width: 100%;
+  padding: 10px 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+/* identical to box height */
+  color: #000000;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.assignment-sec.sen-sa-as-g  .upload-icon-format {
+  max-width: 100% !important;
+  width:auto;
+}
+
+.assignment-sec.sen-sa-as-g .col-lg-2.col-md-2.col-sm-12.col-xs-12.upload-remove a.can-txt-tt {
+  text-align: right;
+}
+
+.assignment-sec.sen-sa-as-g .prog-bar {
+  width: 85% !important;}
+
+.assignment-sec.sen-sa-as-g .assignment-format {
+  margin: 20px 0px;
+}
+
+.assignment-sec.sen-sa-as-g .col-md-12.col-lg-12.col-sm-12.col-xs-12.assign-right {
+  margin-top: 20px;
+}
+
+.w-full-g .attor_back {
+  width: 100% !important;
+}
+
+.v-meet-btn-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 13px 50px;
+  background: #3E8BFE;
+  border-radius: 100px;
+  border: 0;
+  margin: 0px auto;
+}
+
+
+/* The container */
+.container-s {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+
+color: #000000;
+
+}
+
+/* Hide the browser's default radio button */
+.container-s input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.container-s .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #C4C4C4 !important;
+  border-radius: 50%;
+  border: 0;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.container-s input:checked ~ .checkmark {
+  background-color: #2D0DF1 !important;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-s .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+.pop_radio.mt-20.pop-rdd-g {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.pp-dt-g {
+  padding-right: 20px;
+}
+
+.feed-bk-1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DCE6F8;
+}
+
+div#popup_body {
+    position: relative;
+}
+
+a.close-ss-g {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+/* identical to box height */
+    text-align: center;
+    color: #8EA7D3;
+}
+/* ========================================== end judge module====================================== */
+
+
+/*Clerk Module*/
+.clerk_module_page .sidebar-menu ul li a span {
+  font-size: 14px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clerk_module_page .sidebar-menu ul li a:hover svg,
+.clerk_module_page .sidebar-menu ul li a:hover svg path {
+  fill: white !important;
+}
+
+.custom-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-flex h2 {
+  margin: 0;
+}
+
+input.page-numb {
+  width: 50px;
+}
+
+.custom-flex button {
+  background: transparent;
+  border: 1px solid #2a4e90;
+  color: #2b4f92;
+  padding: 4px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+
+.pool_summary {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pool_summary_detail {
+  width: 33.3%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pool_summary_detail label {
+  color: #7D7D7D;
+  margin: 0;
+}
+
+.pool_summary_detail span {
+  color: #0D1426;
+  font-size: 16px;
+}
+
+.clerk_module_page span.pending {
+  padding: 0;
+  color: #FFAA45;
+  background-color: transparent;
+  text-align: left;
+  margin: 0;
+  font-size: 14px;
+}
+
+.mainclerk_dates {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainclerkdate_forms {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainclerkdate_forms label {
+  color: #7E7E7E;
+  font-size: 14px;
+}
+
+.ctn_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+
+.ctn_btn button {
+  margin: 0 10px;
+}
+
+.clk-btn-prmary {
+  background-color: #2D5295;
+  color: #fff;
+  border: 1px solid #2D5295;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.clk-btn-secondary {
+  background-color: transparent;
+  color: #2D5295;
+  border: 1px solid #2D5295;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.mainclerkdate_forms input {
+  background: #F8FAFF;
+  width: 250px !important;
+  height: 37px;
+  max-width: 100%;
+  color: #1F1F1F;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #D6E3FA;
+}
+
+.maindata_clerk {
+  position: relative;
+}
+
+.maindata_clerk span {
+  position: absolute;
+  left: 206px;
+  padding: 6px 11px;
+  background: #F3F4F9;
+  border-left: 1px solid #D6E3FA;
+  top: 1px;
+}
+
+.maindata_clerk input {
+  padding-right: 50px;
+}
+
+
+/* Dashboard - Juror start 15-12 */
+.dashboard_first {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard_first h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: 333333;
+}
+
+.first_sub {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 55px;
+}
+
+.first_sub img {
+  margin-right: 12px;
+}
+
+.first_sub h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #868686;
+}
+
+.dashboard_first h2 span {
+  color: #000000;
+}
+
+.first_sub h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #26282C;
+  max-width: 100%;
+}
+
+span.span_check {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868686;
+}
+
+span.span_time {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Check Out";
+  height: 20px;
+  width: 70px;
+  left: 5px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background: #E74C3C;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-left: 12px;
+}
+
+a.user-name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #212121;
+}
+
+input:checked+.slider {
+  background: #F0F0F0;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.start_hear {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 85px;
+  overflow-y: scroll;
+}
+
+.start_hear h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.check_box_width {
+  width: 15px;
+}
+
+.next_hear {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 85px;
+  overflow-y: scroll;
+}
+
+.next_hear h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+.start_scroll h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.dashboard_tabel_main {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 20px !important;
+  margin: 0px 40px 0px 25px;
+}
+
+.dashboard_table {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.dashboard_tabel_main h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.clerk_module_page span.slider.round::before {
+  padding-top: 4px;
+}
+
+.clerk_module_page label.switch span.slider.round {
+  border-radius: 5px;
+}
+
+.dashboard_table thead tr th,
+.dashboard_table tbody tr td {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.dashboard_table thead tr th {
+  padding: 9px 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.dashboard_table tbody tr td {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #c5c5c5;
+  padding: 15px 10px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.page-wrapper.chiller-theme.toggled .dashboard_tabel_main {
+  margin-bottom: 15px;
+}
+
+.ss_trails {
+  float: right;
+  background: #fff;
+  width: auto;
+  padding: 10px 15px;
+  border: 1px solid #D6E3FA;
+  display: flex;
+  align-items: center;
+}
+
+.ss_trails label,
+.ss_trails h4 {
+  float: left;
+  margin: 0;
+  font-size: 14px;
+  line-height: unset;
+}
+
+.ss_trails h4 {
+  margin: 0 11px;
+  font-weight: 600;
+}
+
+.ss_trails span {
+  font-size: 28px;
+  font-weight: 900;
+  display: inline-block;
+  padding-left: 25px;
+  line-height: unset;
+}
+
+/* Dashboard - Juror end 15-12 */
+
+.first_sub h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #868686;
+}
+
+span.date_bett {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #000;
+  padding-left: 10px;
+}
+
+span.three {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: right;
+  color: #000000;
+  padding-left: 50px;
+}
+
+.first_sub {
+  background: #FFFFFF;
+  border: 1px solid #D6E3FA;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.junor-regcard {
+  width: 100%;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+.dashboard_register {
+  width: 100%;
+}
+
+.headjunor_recoard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 14px;
+  background: #325AA3;
+  color: #fff;
+  border-bottom: 1px solid #D6E3FA;
+}
+
+.headjunor_table {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background: #fff;
+  text-align: center;
+}
+
+.headjunor_table a {
+  color: #000;
+}
+
+.headjunor_table table {
+  border: 1px solid #D6E3FA;
+  width: 100%;
+  float: left;
+}
+
+.headjunor_table table tbody {
+  border-top: 1px solid #D6E3FA;
+}
+
+.headjunor_table table td,
+.headjunor_table table th {
+  border-right: 1px solid #D6E3FA;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.headjunor_table table th {
+  font-weight: 600;
+}
+
+.bodymesage_status {
+  width: 100%;
+  float: left;
+  padding: 10px;
+}
+
+.messge_status {
+  width: 100%;
+  float: left;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+}
+
+.headmesage_status {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 11px;
+  font-size: 14px;
+}
+
+.bodymesage_status ul li {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodymesage_status ul {
+  height: 75px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+span.cancelled {
+  background: #F45F4E;
+  border-radius: 100px;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 10px;
+  padding: 5px 12px;
+}
+
+
+.clerk_module_page table span.pending {
+  background: #FFAA45;
+  border-radius: 100px;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 10px;
+  padding: 5px 16px;
+}
+
+.clerk_module_page table td a {
+  margin: 0 5px;
+}
+
+.bodymesage_status ul li button {
+  background: #325AA3;
+  border: 1px solid #D6E3FA;
+  color: #fff;
+  padding: 3px 15px;
+}
+
+.junor-regcard {
+  width: 100%;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+.dashboard_register {
+  width: 100%;
+}
+
+.headjunor_recoard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 14px;
+  background: #325AA3;
+  color: #fff;
+  border-bottom: 1px solid #D6E3FA;
+}
+
+.headjunor_table {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background: #fff;
+  text-align: center;
+}
+
+
+.headjunor_table table {
+  border: 1px solid #D6E3FA;
+  width: 100%;
+  float: left;
+}
+
+.headjunor_table table tbody {
+  border-top: 1px solid #D6E3FA;
+}
+
+.headjunor_table table td,
+.headjunor_table table th {
+  border-right: 1px solid #D6E3FA;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.headjunor_table table th {
+  font-weight: 600;
+}
+
+.bodymesage_status {
+  width: 100%;
+  float: left;
+  padding: 10px;
+}
+
+.messge_status {
+  width: 100%;
+  float: left;
+  border: 1px solid #D6E3FA;
+  background: #fff;
+}
+
+.headmesage_status {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 11px;
+  font-size: 14px;
+}
+
+.bodymesage_status ul li {
+  border-bottom: 1px solid #D6E3FA;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodymesage_status ul {
+  height: 75px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bodymesage_status ul li button {
+  background: #325AA3;
+  border: 1px solid #D6E3FA;
+  color: #fff;
+  padding: 3px 15px;
+}
+
+.input-group.select_sessions select {
+  background: #2A4E8F;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 0 8px;
+}
+
+.input-group.select_sessions select option {
+  background: #fff;
+  color: #74839F;
+}
+
+.send-btn-g {
+  font-family: Open Sans !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  line-height: 15px !important;
+  color: #FFFFFF !important;
+  background: #325AA3 !important;
+  border-radius: 7px !important;
+  width: 78px !important;
+  height: 25px !important;
+  position: relative !important;
+  margin-right: 10px;
+}
+
+.message_chat .chat .chat-message button {
+  float: right;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  background: transparent;
+}
+
+.rt-bn {
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.profile-data.action-block.clerk-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-data.action-block.clerk-action button {
+  padding: 8px 20px !important;
+  font-size: 14px;
+  margin-top: 25px !important;
+}
+
+td.t-center {
+  text-align: center;
+}
+
+.cancelled-status {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background: #F45F4E;
+  border-radius: 100px;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+.headjunor_table a {
+  color: #000;
+}
+
+.recorder_wrapper {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background: #FCFCFC;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.recorder_wrapper_list {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  position: relative;
+}
+
+.recorder_wrapper_list span {
+  position: absolute;
+  bottom: 15px;
+  cursor: pointer;
+  right: 30px;
+}
+
+div#inner_previous .schedule-inner-first {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+div#inner_previous .inner-content-wrapper.hosting_link {
+  border: 0 !important;
+  margin-top: 0;
+}
+
+div#inner_previous .schedule-cnt-part.border_color_none {
+  border: 0;
+}
+
+.attor_back.clerk_attory_back {
+  width: 100% !important;
+  float: left;
+}
+
+.attor_back.clerk_attory_back h4.prose_attor {
+  margin-top: 10px !important;
+}
+
+.attor_back.clerk_attory_back h3 {
+  margin: 0;
+}
+
+.v-meet-btn-g {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 13px 50px;
+  background: #3E8BFE;
+  border-radius: 100px;
+  border: 0;
+  margin: 0px auto;
+}
+
+.inner-content-wrapper.new_material h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.form_group {
+  width: 100%;
+  float: left;
+}
+
+.form_group label {
+  width: 100%;
+  float: left;
+}
+
+.form_group select {
+  width: 275px;
+  height: 40px;
+  border: 1px solid #D6E3FA;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.form_group input {
+  width: 275px;
+  height: 40px;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #D6E3FA;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.maingroup-ra {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form_group.timedate_wraps span {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  float: left;
+}
+
+.form_group.timedate_wraps span img {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  padding: 9px 10px;
+  background: #F3F4F9;
+  border-left: 1px solid #D6E3FA;
+}
+
+.form_group.timedate_wraps input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.create_poll {
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.clerk_module_page .student_list.tog-pad-right h4.mb-10 {
+  margin-bottom: 10px;
+}
+
+button.create_poll {
+  background: transparent;
+  font-weight: 600;
+  font-size: 17px;
+  color: #325AA3;
+  border: 1px solid #325AA3;
+  padding: 8px 0;
+  border-radius: 50px;
+}
+
+.create_session {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create_session button {
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  color: #fff;
+}
+
+button.sess-create-pri {
+  background: #325AA3;
+}
+
+button.sess-cancel {
+  background: #F7513F;
+}
+
+div#list_of_jurors .modal-body {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.headlist_junors {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rebeccapurple;
+  color: #fff;
+}
+
+.headlist_junors h2 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.list_of_junors {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+div#list_of_jurors .create_session {
+  margin-bottom: 15px;
+}
+
+.list_of_junors {
+  width: 100%;
+  padding: 15px;
+}
+
+span.close_wide img {
+  opacity: 0.5;
+}
+
+.list_of_junors ul li {
+  width: calc(33.3% - 16px);
+  border: 1px solid #ccc;
+  display: flex;
+  padding: 7px;
+  margin: 8px;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.headlist_junors input {
+  width: 400px;
+  max-width: 100%;
+}
+
+.detailsList_jun h2 {
+  font-weight: 600;
+}
+
+.detailsList_jun span {
+  color: rgb(33 33 33 / .5);
+  cursor: pointer;
+}
+
+.list_of_junors ul li>span {
+  position: absolute;
+  right: 13px;
+}
+
+.list_of_junors ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.list_of_junors ul li>img {
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.clerk_module_page td.actions span {
+  margin: 0;
+}
+
+main#previous-scheduled-ses-g .table-sec td a {
+  color: #a7a7a7;
+}
+
+button.clerk_primary {
+  background: #325aa3;
+  color: #fff;
+  border: 1px solid #2a4e90;
+  padding: 4px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/*Clerk Module*/

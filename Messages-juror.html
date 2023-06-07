@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Jury Management</title>
+    <!-- Scripts -->
+    <script src="./js/app.js" defer></script>
+
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <a href="#">
+            <i class="fa fa-bell"></i>Notification
+            <span class="badge badge-pill badge-warning notification">3</span>
+        </a>
+        <a href="./Login-Juror.html" class="logout">
+            <i class="fas fa-sign-out-alt"></i>Logout
+
+        </a>
+
+
+    </header>
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="./user-As.html">Juror & Trial Portal</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header" >
+                    <div class="user-pic">
+
+                        <img class="img-responsive img-rounded" src="./images/Juror/side_profile.png" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                       <a href="./profile-juror.html" class="user-name"> Chris Hemsworth
+          </a>
+                        <span class="user-role">Juror </span>
+
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Home</span>
+                        </li>
+                        <li class="dashboard_side_menue">
+                            <a href="./Start Here- Juror.html" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M17.9787 1.34374C17.9397 0.62873 17.371 0.060148 16.656 0.0211246C15.2133 -0.0576957 12.3901 0.0189801 9.69051 1.41528C8.31432 2.12712 6.85885 3.334 5.69733 4.72647C5.68302 4.74363 5.6691 4.76089 5.65489 4.77808L3.01888 4.98171C2.58498 5.01525 2.19851 5.24267 1.95853 5.60562L0.160147 8.32573C-0.0218565 8.60101 -0.05079 8.9455 0.0826982 9.24725C0.216222 9.54903 0.490581 9.75934 0.816655 9.80986L3.03751 10.1538C3.02967 10.197 3.0218 10.2401 3.01459 10.2833C2.94066 10.7256 3.08719 11.1803 3.40662 11.4997L6.50008 14.5932C6.76492 14.858 7.12277 15.004 7.48945 15.004C7.56497 15.004 7.6409 14.9978 7.71649 14.9852C7.75966 14.978 7.8028 14.9701 7.84597 14.9622L8.18994 17.1831C8.24046 17.5092 8.45076 17.7836 8.75248 17.9171C8.87802 17.9726 9.01087 18.0001 9.14313 18.0001C9.32886 18 9.51329 17.946 9.67403 17.8397L12.3941 16.0413C12.7571 15.8013 12.9845 15.4148 13.018 14.9809L13.2216 12.3449C13.2388 12.3307 13.2561 12.3168 13.2733 12.3025C14.6658 11.141 15.8727 9.68551 16.5845 8.30928C17.9809 5.6096 18.0574 2.78637 17.9787 1.34374ZM11.8125 15.1614L9.21053 16.8817L8.87528 14.7174C9.97496 14.394 11.0628 13.8762 12.0992 13.1824L11.9665 14.8996C11.9583 15.0068 11.9021 15.1022 11.8125 15.1614ZM7.24585 13.8474L4.15235 10.7539C4.07342 10.6749 4.03693 10.564 4.05483 10.4572C4.1468 9.90724 4.28971 9.38373 4.46661 8.89055L9.10822 13.5322C8.51591 13.7443 7.98537 13.8709 7.54257 13.9449C7.43556 13.9627 7.32478 13.9263 7.24585 13.8474ZM3.10012 6.03327L4.8173 5.90062C4.12352 6.93699 3.60567 8.02483 3.28234 9.12452L1.11798 8.7893L2.83832 6.18732C2.89759 6.09767 2.99304 6.04153 3.10012 6.03327ZM12.5978 11.4925C11.7458 12.2032 10.9188 12.7171 10.1566 13.0891L4.91053 7.843C5.39773 6.84794 5.99232 6.01934 6.50722 5.40207C7.58212 4.11342 8.91901 3.00174 10.1751 2.35205C12.6527 1.0705 15.2631 1.00149 16.5986 1.07419C16.7754 1.08383 16.916 1.22442 16.9256 1.40122C16.9984 2.73673 16.9293 5.34709 15.6477 7.82472C14.9981 9.08078 13.8864 10.4176 12.5978 11.4925Z" fill="#74839F"/>
+                                    <path d="M12.33 8.30545C13.0051 8.30538 13.6804 8.04839 14.1944 7.53444C14.6924 7.03645 14.9666 6.37432 14.9666 5.67007C14.9666 4.96582 14.6924 4.30369 14.1944 3.8057C13.1663 2.77762 11.4936 2.77769 10.4656 3.8057C9.96761 4.30369 9.69336 4.96582 9.69336 5.67007C9.69336 6.37432 9.96765 7.03645 10.4656 7.53444C10.9797 8.04849 11.6547 8.30552 12.33 8.30545ZM11.2113 4.55143C11.5197 4.24301 11.9248 4.08881 12.3299 4.08881C12.7351 4.08881 13.1402 4.24301 13.4486 4.55143C13.7474 4.85022 13.9119 5.24749 13.9119 5.67003C13.9119 6.09258 13.7474 6.48988 13.4486 6.78867C12.8318 7.40549 11.8281 7.40545 11.2113 6.78867C10.9125 6.48988 10.7479 6.09261 10.7479 5.67007C10.7479 5.24753 10.9125 4.85022 11.2113 4.55143Z" fill="#74839F"/>
+                                    <path d="M0.537824 14.834C0.672789 14.834 0.807754 14.7826 0.910691 14.6796L2.6324 12.9578C2.83834 12.7519 2.83834 12.418 2.6324 12.2121C2.42649 12.0061 2.09257 12.0061 1.88663 12.2121L0.164957 13.9338C-0.0409883 14.1397 -0.0409883 14.4736 0.164957 14.6796C0.267895 14.7825 0.402859 14.834 0.537824 14.834Z" fill="#74839F"/>
+                                    <path d="M4.21033 13.7897C4.00442 13.5838 3.67051 13.5838 3.46456 13.7897L0.154459 17.0999C-0.0514863 17.3058 -0.0514863 17.6397 0.154459 17.8456C0.257432 17.9486 0.392361 18.0001 0.527326 18.0001C0.662291 18.0001 0.797256 17.9486 0.900193 17.8456L4.21029 14.5355C4.41628 14.3295 4.41628 13.9957 4.21033 13.7897Z" fill="#74839F"/>
+                                    <path d="M5.04242 15.3678L3.32072 17.0895C3.11477 17.2955 3.11477 17.6294 3.32072 17.8353C3.42369 17.9383 3.55866 17.9898 3.69359 17.9898C3.82851 17.9898 3.96351 17.9383 4.06645 17.8353L5.78816 16.1136C5.9941 15.9077 5.9941 15.5738 5.78816 15.3678C5.58225 15.1619 5.24833 15.1619 5.04242 15.3678Z" fill="#74839F"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <span > Start Here</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./Dashboard - Juror.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                    <path d="M18 9.64822C18 11.6227 17.3716 13.497 16.1827 15.0687C15.9482 15.379 15.5071 15.4391 15.1978 15.2052C14.8881 14.971 14.827 14.53 15.0612 14.2203C16.0638 12.895 16.5938 11.3139 16.5938 9.64822C16.5938 5.45117 13.1947 2.05859 9 2.05859C4.8024 2.05859 1.40625 5.45378 1.40625 9.64822C1.40625 11.3139 1.9362 12.895 2.93871 14.2203C3.17299 14.53 3.11188 14.971 2.8022 15.2052C2.49239 15.4395 2.05156 15.3784 1.81714 15.0687C0.628418 13.497 0 11.6227 0 9.64822C0 4.67361 4.02814 0.652344 9 0.652344C13.9746 0.652344 18 4.67636 18 9.64822ZM13.4551 5.41368C13.7296 5.6882 13.7296 6.13342 13.4551 6.40794L11.1632 8.69983C11.3519 9.04768 11.4593 9.44594 11.4593 9.86864C11.4593 11.2248 10.356 12.3279 9 12.3279C7.64388 12.3279 6.54071 11.2248 6.54071 9.86864C6.54071 8.51265 7.64388 7.40935 9 7.40935C9.42284 7.40935 9.82095 7.51674 10.1688 7.70543L12.4607 5.41354C12.7354 5.13902 13.1804 5.13902 13.4551 5.41368ZM10.053 9.86878C10.053 9.28815 9.58063 8.81574 9 8.81574C8.41937 8.81574 7.94696 9.28815 7.94696 9.86878C7.94696 10.4494 8.41937 10.9218 9 10.9218C9.58063 10.9218 10.053 10.4494 10.053 9.86878Z" fill="#74839F"/>
+                                </svg>
+                                <span> Dashboard</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./Previous-Sessions-Juror.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M16.3055 8.37527V1.65705C16.3055 1.36582 16.0694 1.12971 15.7781 1.12971H13.1988V0.527344C13.1988 0.236109 12.9627 0 12.6715 0C12.3802 0 12.1441 0.236109 12.1441 0.527344V1.12971H8.68008V0.527344C8.68008 0.236109 8.44397 0 8.15273 0C7.8615 0 7.62539 0.236109 7.62539 0.527344V1.12971H4.16134V0.527344C4.16134 0.236109 3.92523 0 3.634 0C3.34276 0 3.10665 0.236109 3.10665 0.527344V1.12971H0.527344C0.236109 1.12971 0 1.36582 0 1.65705V15.7782C0 16.0694 0.236109 16.3055 0.527344 16.3055H8.37527C9.39491 17.3502 10.8174 18 12.389 18C15.4829 18 18 15.483 18 12.3891C18 10.8174 17.3502 9.39491 16.3055 8.37527ZM1.05469 2.1844H15.2508V4.51877H1.05469V2.1844ZM1.05469 15.2508V5.57346H15.2508V7.56464C14.4123 7.06542 13.4337 6.77813 12.3891 6.77813C9.29521 6.77813 6.77813 9.29517 6.77813 12.3891C6.77813 13.4337 7.06542 14.4124 7.56464 15.2508H1.05469ZM12.389 16.9453C9.87673 16.9453 7.83278 14.9014 7.83278 12.3891C7.83278 9.87673 9.87669 7.83281 12.389 7.83281C14.9014 7.83281 16.9453 9.87676 16.9453 12.3891C16.9453 14.9014 14.9014 16.9453 12.389 16.9453Z" fill="#74839F"/>
+                                    <path d="M14.8273 10.4044L11.126 13.3289L10.3069 12.2922C10.1025 12.0335 9.72707 11.9895 9.46839 12.1939C9.20972 12.3983 9.1657 12.7737 9.37008 13.0324L10.5593 14.5375C10.7637 14.7961 11.1391 14.8402 11.3978 14.6358L15.5675 11.3412C15.8262 11.1368 15.8702 10.7614 15.6658 10.5027C15.4614 10.2441 15.086 10.2001 14.8273 10.4044Z" fill="#74839F"/>
+                                </svg>
+                                <span> Previous Scheduled</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Messages-juror.html"  class="active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                                    <path d="M16.418 0.144531H1.58203C0.710789 0.144531 0 0.854547 0 1.72656V12.2734C0 13.1425 0.707625 13.8555 1.58203 13.8555H16.418C17.287 13.8555 18 13.1478 18 12.2734V1.72656C18 0.8575 17.2924 0.144531 16.418 0.144531ZM16.1995 1.19922L9.03354 8.36522L1.80559 1.19922H16.1995ZM1.05469 12.055V1.93993L6.13403 6.97571L1.05469 12.055ZM1.80046 12.8008L6.883 7.71824L8.66391 9.48386C8.87006 9.68826 9.20275 9.68759 9.40806 9.48224L11.1445 7.74577L16.1995 12.8008H1.80046ZM16.9453 12.055L11.8903 7L16.9453 1.94495V12.055Z" fill="#74839F"/>
+                                </svg>
+                                <span>Messages</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a  data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M16.3055 8.37527V1.65705C16.3055 1.36582 16.0694 1.12971 15.7781 1.12971H13.1988V0.527344C13.1988 0.236109 12.9627 0 12.6715 0C12.3802 0 12.1441 0.236109 12.1441 0.527344V1.12971H8.68008V0.527344C8.68008 0.236109 8.44397 0 8.15273 0C7.8615 0 7.62539 0.236109 7.62539 0.527344V1.12971H4.16134V0.527344C4.16134 0.236109 3.92523 0 3.634 0C3.34276 0 3.10665 0.236109 3.10665 0.527344V1.12971H0.527344C0.236109 1.12971 0 1.36582 0 1.65705V15.7782C0 16.0694 0.236109 16.3055 0.527344 16.3055H8.37527C9.39491 17.3502 10.8174 18 12.389 18C15.4829 18 18 15.483 18 12.3891C18 10.8174 17.3502 9.39491 16.3055 8.37527ZM1.05469 2.1844H15.2508V4.51877H1.05469V2.1844ZM1.05469 15.2508V5.57346H15.2508V7.56464C14.4123 7.06542 13.4337 6.77813 12.3891 6.77813C9.29521 6.77813 6.77813 9.29517 6.77813 12.3891C6.77813 13.4337 7.06542 14.4124 7.56464 15.2508H1.05469ZM12.389 16.9453C9.87673 16.9453 7.83278 14.9014 7.83278 12.3891C7.83278 9.87673 9.87669 7.83281 12.389 7.83281C14.9014 7.83281 16.9453 9.87676 16.9453 12.3891C16.9453 14.9014 14.9014 16.9453 12.389 16.9453Z" fill="#74839F"/>
+                                    <path d="M14.0837 11.8615H12.9165V10.6943C12.9165 10.4031 12.6804 10.167 12.3892 10.167C12.0979 10.167 11.8618 10.4031 11.8618 10.6943V12.3889C11.8618 12.6801 12.0979 12.9162 12.3892 12.9162H14.0837C14.3749 12.9162 14.611 12.6801 14.611 12.3889C14.611 12.0976 14.3749 11.8615 14.0837 11.8615Z" fill="#74839F"/>
+                                </svg>
+                                <span>Defer/Excuse</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <p class="text-center">copyright © All rights reserved</p>
+            </div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content" id="message-jur">
+            <div class="container-fluid">
+                <div class="col-lg-12">
+                    <h2 class="title">MESSAGES</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div class="browse_classes">
+                        <div class="message_chat clearfix">
+                            <div class="people-list" id="people-list">
+                                <div class="search">
+                                    <input type="text" placeholder="search">
+                                    <!-- <i class="fa fa-search"></i> -->
+                                </div>
+                                <ul class="list"><li class="clearfix active_sts">
+                                        <img src="./images/juror/chat_user1.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name">Mr. Joseph Johnson</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle online"></i> online
+                                            </div>
+                                            <div class="notifiaction_item">2</div>
+                                        </div>
+                                    </li><li class="clearfix">
+                                        <img src="./images/juror/chat_user2.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name">Mike Thomas</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle online"></i> online
+                                            </div>
+                                        </div>
+                                    </li><li class="clearfix">
+                                        <img src="./images/juror/chat_user3.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name"> Ms. Sherley</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle offline"></i> Offline
+                                            </div>
+                                            <div class="notifiaction_item">2</div>
+                                        </div>
+                                    </li><li class="clearfix">
+                                        <img src="./images/juror/chat_user4.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name">Christian Kelly</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle offline"></i> Offline
+                                            </div>
+                                        </div>
+                                    </li><li class="clearfix">
+                                        <img src="./images/juror/stud_6.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name">Monica S</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle online"></i> online
+                                            </div>
+                                        </div>
+                                    </li><li class="clearfix">
+                                        <img src="./images/juror/stud_7.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name">Monica Ward</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle online"></i> online
+                                            </div>
+                                        </div>
+                                    </li><li class="clearfix">
+                                        <img src="./images/juror/stud_5.png" alt="avatar">
+                                        <div class="about">
+                                            <div class="time_chat">6:33PM</div>
+                                            <div class="user_title">clerk</div>
+                                            <div class="name">Christian Kelly</div>
+                                            <div class="status">
+                                                <i class="fa fa-circle offline"></i> Offline
+                                            </div>
+                                        </div>
+                                    </li></ul>
+                            </div>
+
+                            <div class="chat">
+                                <div class="chat-header clearfix">
+                                    <img src="./images/juror/chat_user1.png" class="ava_active" alt="avatar">
+
+                                    <div class="chat-about">
+
+                                        <div class="user_title">clerk</div>
+                                        <div class="chat-with"> Mr. Joseph Johnson</div>
+                                        <div class="status">
+                                            <i class="fa fa-circle online"></i> online
+                                        </div>
+
+                                    </div>
+                                    <!-- <i class="fa fa-star"></i> -->
+                                </div>
+                                <!-- end chat-header -->
+
+                                <div class="chat-history">
+                                    <ul>
+                                        <li class="clearfix">
+
+                                            <div class="message other-message float-right">
+                                                Hi Mr. Joseph Johnson, how are you? How is the project coming along?
+                                            </div>
+                                            <div class="message-data align-right">
+                                                <span class="message-data-time">10:10 AM, Today</span> &nbsp; &nbsp;
+                                                <span class="message-data-name">You</span> <i class="fa fa-circle me"></i>
+
+                                            </div>
+                                        </li>
+
+                                        <li>
+
+                                            <div class="message my-message">
+                                                Are we meeting today? Project has been already finished and I have results to show you.
+                                            </div>
+                                            <div class="message-data">
+                                                <span class="message-data-name"><i class="fa fa-circle online"></i> Mr. Joseph Johnson</span>
+                                                <span class="message-data-time">10:12 AM, Today</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="clearfix">
+
+                                            <div class="message other-message float-right">
+                                                Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
+                                            </div>
+                                            <div class="message-data align-right">
+                                                <span class="message-data-time">10:14 AM, Today</span> &nbsp; &nbsp;
+                                                <span class="message-data-name">You</span> <i class="fa fa-circle me"></i>
+
+                                            </div>
+                                        </li>
+
+                                        <li>
+
+                                            <div class="message my-message">
+                                                Actually everything was fine. I'm very excited to show this to our team.
+                                            </div>
+                                            <div class="message-data">
+                                                <span class="message-data-name"><i class="fa fa-circle online"></i> Mr. Joseph Johnson</span>
+                                                <span class="message-data-time">10:20 AM, Today</span>
+                                            </div>
+                                        </li>
+
+                                        <li>
+
+                                            <i class="fa fa-circle online"></i>
+                                            <i class="fa fa-circle online" style="color: #AED2A6"></i>
+                                            <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+                                            <div class="message-data">
+                                                <span class="message-data-name"><i class="fa fa-circle online"></i> Mr. Joseph Johnson</span>
+                                                <span class="message-data-time">10:31 AM, Today</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <!-- end chat-history -->
+
+                                <div class="chat-message mesage-juror">
+                                    <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
+                                    <div class="rt-bn">
+                                    
+                                    <button class="send-btn-g">EMAIL</button>
+                                    <button class="send-btn-g">IN APP MSG</button>
+                                </div>
+                                </div>
+                                <!-- end chat-message -->
+
+                            </div>
+                            <!-- end chat -->
+
+                        </div>
+                        <!-- end container -->
+
+                        <script id="message-template" type="text/x-handlebars-template">
+                            <li class="clearfix">
+                                <div class="message-data align-right">
+                                    <span class="message-data-time">{{time}}, Today</span> &nbsp; &nbsp;
+                                    <span class="message-data-name">You</span> <i class="fa fa-circle me"></i>
+                                </div>
+                                <div class="message other-message float-right">
+                                    {{messageOutput}}
+                                </div>
+                            </li>
+                        </script>
+
+                        <script id="message-response-template" type="text/x-handlebars-template">
+                            <li>
+                                <div class="message-data">
+                                    <span class="message-data-name"><i class="fa fa-circle online"></i> Mr. Joseph Johnson</span>
+                                    <span class="message-data-time">{{time}}, Today</span>
+                                </div>
+                                <div class="message my-message">
+                                    {{response}}
+                                </div>
+                            </li>
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+
+ <!-- The Modal -->
+ <div class="modal fade p-0" id="myModal">
+    <div class="modal-dialog modal-dialog-centered justify-content-center">
+        <div class="modal-content" id="class_popup">
+            <div class="modal-body" id="popup_body">
+                <div class="pp-hd">
+                    <h2>Deferal or Excusal Request</h2>
+                    <a href="#" data-dismiss="modal">Close</a>
+                </div>
+                <div class="p-d-g">
+                <div class="pp-prof">
+                    <img src="./images/juror/stud_6.png">
+                    <div class="pp-prof-det">
+                        <h2>Ms. Halle Berry </h2>
+                        <p>Clerk of Superior Court </p>
+                    </div>
+                </div>
+                <div class="select-option-g">
+                    <label class="label-txt-g">Select Option</label>
+                    <div class="select-ic-sec">
+                        <div class="selc-inner-g">
+                            <label class="container">Request to be Excused
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selc-inner-g">
+                            <label class="container">Non-citizen or Non-resident
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selc-inner-g">
+                            <label class="container">Full-time studen
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selc-inner-g">
+                            <label class="container">COVID - 19 high risk 
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selc-inner-g">
+                            <label class="container">Military 
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selc-inner-g">
+                            <label class="container">72 Yrs or Older 
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selc-inner-g">
+                            <label class="container">Other
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+                </div>
+
+                <textarea class="pp-txt-g">Enter the reason</textarea>
+
+                <div class="upload-wrapper">
+                    <div class="ulop-iiner">
+                    <img src="./images/juror/upload.png" class="drag-img"></div>
+                    <div class="upp-latt">
+                    <p class="drag-text">Drag and Drop your files here</p>
+                    <p class="drag-text">or</p>
+                    <input type="file" class="upload-file-input"></div>
+                </div>
+
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 assign-right p-0">
+                    <div class="uploading-wrapper">
+                      
+                            <!--first  -->
+                            <div class="assignment-format p-0 pro-in-g">
+                                
+                                    <div class=" format-details p-0">
+                                        <h3>Jamie Fox Student Note file-1.pdf</h3>                                                          
+                                    </div>
+                                <div class="prog-b-gg">                                                        <div class="progress prog-bar">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p>100%</p>
+                                    </div>
+
+                                    <a href="#" class="can-txt-tt">x Remove</a>
+                            </div>
+
+                            <div class="assignment-format p-0 pro-in-g">
+                                
+                                <div class=" format-details p-0">
+                                    <h3>Jamie Fox Student Note file-1.pdf</h3>                                                          
+                                </div>
+                            <div class="prog-b-gg">                                                        <div class="progress prog-bar">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p>100%</p>
+                                </div>
+
+                                <a href="#" class="can-txt-tt">x cancel</a>
+                        </div>
+         
+             
+                           
+                            <!-- end first -->
+
+
+                            <button class="submit-btn mx-auto d-block mt-3">Submit</button>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="./js/app.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+<!-- Fonts -->
+
+
+
+</body>
+
+</html>

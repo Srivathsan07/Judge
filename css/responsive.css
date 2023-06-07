@@ -1,0 +1,342 @@
+
+/* User As by 14-12 */
+
+@media only screen and (max-width: 767px) {
+
+.user-as-bg {
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.user-select-sec {
+    flex-direction: column;
+}
+
+.user-select-sec {
+    flex-direction: column;
+}
+
+.first_sub {
+    flex-wrap: wrap;
+}
+
+.dashboard_top_content .first_sub h3 {
+    margin: 5px 0px !important;
+}
+
+.fc-right {
+    position: relative;
+    right: unset;
+}
+
+.fc-center {
+    display: none;
+}
+
+.fc-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .user-select-sec {
+        
+        justify-content: center;
+        
+    }
+
+   
+    .dashboard_second .col-lg-5 {
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .dashboard_tabel_main {
+        margin: 0px 25px;
+    }
+
+    .form-pik{
+        margin: 15px 0px;
+    }
+
+    .from-date-section img {
+        right: 20px !important;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 992px) and (min-width:768px){
+
+    .user-select-sec {
+        
+        justify-content: center;
+        
+    }
+
+    .user-as-bg {
+        max-height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0px;
+        background: linear-gradient(to bottom,#1F3D74 50%,#EDF3FF 50%);
+    }
+
+    .table-head-txt-g {
+        margin-top: 20px;
+    }
+    
+   
+}
+
+/* end User As by 14-12 */
+
+
+/* First Component - Juror*/
+
+@media only screen and (max-width: 991px) {
+
+    .login-area-g {
+        background: none !important;        
+    justify-content: center;
+    }  
+    .lg-b-gg {
+        height: 100%;
+        padding: 40px 0px;
+    } 
+
+    .wrapp-sec-g {
+        height: 50vh;}
+
+        .user-select-sec {
+            
+            flex-wrap: wrap;
+          }
+          
+          .dashboard_top_content .col-lg-6 {
+            padding: 0px !important;
+            margin: 10px 0px !important;
+        }
+
+     .schedule-content {
+            margin-bottom: 20px;
+        }     
+        .cal-hd-g .title{
+            position: relative;
+            top:unset;
+        }
+        .send-to-r-g {
+            margin-top: 10px;
+        }       
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    
+        .user-select-sec {
+            
+            flex-wrap: wrap;
+          }
+          
+
+}
+
+
+@media only screen and (max-width: 767px) {
+ 
+    .login-area-g {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .login-bg-wrapper-g {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .assignment-sec.sen-sa-as-g .col-lg-2.col-md-2.col-sm-12.col-xs-12.upload-remove a.can-txt-tt {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .rt-bn {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 5px;
+        align-items: center;
+        clear: both;
+        height: auto;
+    max-width: 100%;
+    width: 100% !important;
+    margin: 0px !important;
+    right: unset;
+    top: unset;
+    }
+    
+    .rt-bn .send-btn-g {
+        margin: 5px;
+        position: relative !important;
+        top: unset !important;
+        right: unset !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 510px){
+    .select-ic-sec {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    .selc-inner-g {
+        width: 100% !important;
+    }
+    .assignment-format.p-0.pro-in-g {
+        flex-wrap: wrap;
+    }
+    
+    .can-txt-tt {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .send-to-l-g {
+        flex-direction: column;
+    }
+    }
+
+
+    @media only screen and (max-width: 400px){
+        #class_popup div {
+            justify-content: center;
+        }
+        }
+/* First Component - Juror end by 14-12 */
+
+
+/* ==========================================judge module====================================== */
+
+
+
+    @media only screen and (max-width: 768px) {
+        .resp_dash{display: block;}
+        .resp_dash .first_sub{margin-top: 10px;}
+        .modal-dialog-centered_1 { max-width: 90%;margin: auto;}
+        .rating_content {display: block;}
+        .rating_content button {margin-top: 10px;}
+        .feed_content {display: block;}
+    }
+    
+    
+
+/* ========================================== end judge module====================================== */
+
+
+
+
+/*Clerk module*/
+@media only screen and (max-width: 389px) {
+    .maindata_clerk span {
+        left: calc(100% - 45px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mainclerk_dates {
+        flex-direction: column;
+    }
+
+    .mainclerkdate_forms {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .headlist_junors input {
+        width: 60%;
+    }
+
+    .list_of_junors ul li {
+        width: 100%;
+    }
+
+    .maingroup-ra {
+        flex-direction: column;
+    }
+
+    .form_group input {
+        width: 100%;
+    }
+
+    .form_group select {
+        width: 100%;
+    }
+
+
+
+    .dashboard_register .row>div {
+        margin-bottom: 15px;
+    }
+
+    .list_of_junors ul {
+        height: 65vh;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainclerkdate_forms input {
+        width: 81% !important;
+    }
+
+    .maindata_clerk span {
+        left: 56%;
+    }
+
+    .headlist_junors input {
+        width: 60%;
+    }
+
+    .list_of_junors ul li {
+        width: calc(50% - 16px);
+    }
+
+    .list_of_junors ul {
+        height: 60vh;
+        overflow-y: scroll;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .mainclerkdate_forms input {
+        width: 81% !important;
+    }
+
+    .maindata_clerk span {
+        left: 59%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .mainclerkdate_forms input {
+        width: 81% !important;
+    }
+
+    .maindata_clerk span {
+        left: 64%;
+    }
+}
+
+/*Clerk module*/
